@@ -1,0 +1,16 @@
+{
+  "name": "smoothie",
+  "version": "1.0.0",
+  "description": "animation mixin library",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Karim Cheurfi",
+  "license": "MIT",
+  "devDependencies": {
+    "browser-sync": "^2.0.1",
+    "gulp": "^3.8.11",
+    "gulp-sass": "^1.3.2"
+  }
+}

@@ -1,0 +1,98 @@
+// **** ANIMATION **** //
+
+// zerosixthree
+=animation($str)
+
+   -webkit-animation: #{$str}
+   -moz-animation: #{$str}
+   -ms-animation: #{$str}
+   -o-animation: #{$str}
+   animation: #{$str}
+
+// thought bot
+=keyframes($name)
+   @-webkit-keyframes #{$name}
+      @content
+   @-moz-keyframes #{$name}
+      @content
+   @-ms-keyframes #{$name}
+      @content
+   @keyframes #{$name}
+      @content
+
+// use of keyframes mixin
++keyframes(bgcolor)
+   0%
+      background-color: #ffc
+   50%
+      background-color: #fcf
+   100%
+      background-color: #ccf
+
++keyframes(fadeIn)
+
+   0%
+      +transform(translate3d(0,100%,0))
+      opacity: 0
+
+   50%
+      opacity: 0.5
+
+   100%
+      +transform(translate3d(0))
+      opacity: 1
+
++keyframes(fadeInLeft)
+
+   0%
+      +transform(translate3d(-200%,0,0))
+      opacity: 0
+
+   50%
+      opacity: 0.5
+
+   100%
+      +transform(translate3d(0))
+      opacity: 1
+
++keyframes(fadeInRight)
+
+   0%
+      +transform(translate3d(200%,0,0))
+      opacity: 0
+
+   50%
+      opacity: 0.5
+
+   100%
+      +transform(translate3d(0))
+      opacity: 1
+
++keyframes(splash)
+
+   0%
+      +transform(scale3d(0))
+      opacity: 0
+
+   50%
+      +transform(scale3d(1.02,1.02,2))
+      opacity: .5
+   90%
+      +transform(scale3d(1.5,1.5,1.5))
+      opacity: 0.9
+   100%
+      +transform(scale3d(1))
+      opacity: 1
+
+
+
+body
+   background: blue
+
+
+   .square
+      width: 200px
+      height: 200px
+      display: block
+      background: yellow
+      margin: 50px auto

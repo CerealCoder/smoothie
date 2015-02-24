@@ -1,0 +1,36 @@
+@-webkit-keyframes bgcolor {
+  0% {
+    background-color: #ffccf2; }
+  50% {
+    background-color: #ccffcc; }
+  100% {
+    background-color: #ccffff; } }
+@-moz-keyframes bgcolor {
+  0% {
+    background-color: #ffccf2; }
+  50% {
+    background-color: #ccffcc; }
+  100% {
+    background-color: #ccffff; } }
+@-ms-keyframes bgcolor {
+  0% {
+    background-color: #ffccf2; }
+  50% {
+    background-color: #ccffcc; }
+  100% {
+    background-color: #ccffff; } }
+@keyframes bgcolor {
+  0% {
+    background-color: #ffccf2; }
+  50% {
+    background-color: #ccffcc; }
+  100% {
+    background-color: #ccffff; } }
+body {
+  -webkit-animation: bgcolor .2s infinite ease forwards;
+  -moz-animation: bgcolor .2s infinite ease forwards;
+  -ms-animation: bgcolor .2s infinite ease forwards;
+  -o-animation: bgcolor .2s infinite ease forwards;
+  animation: bgcolor .2s infinite ease forwards; }
+
+/*# sourceMappingURL=main.css.map */

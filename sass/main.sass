@@ -1,0 +1,31 @@
+@import 'base/index'
+@import 'smoothie'
+
+body
+   background: steelblue
+   overflow: hidden
+
+   .container
+      +outer-container
+      height: 200px
+      background: beige
+      +display(flex)
+      +align-items(stretch)
+      +justify-content(space-around)
+
+      .item
+         width: 33%
+         margin: 0 22px
+         height: auto
+         background: palevioletred
+         +animation('splash 2s .9s 1 ease-in forwards')
+
+         &:first-child
+
+            background: lightsalmon
+            +animation('fadeInLeft 2s 3 ease-in forwards')
+
+         &:last-child
+
+            background: navajowhite
+            +animation('fadeInRight 2s 3 ease-in forwards')
