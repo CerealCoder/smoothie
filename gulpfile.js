@@ -7,7 +7,8 @@ var reload = browserSync.reload;
 gulp.task('browser-sync', function(){
 
    var files = [
-      'index.html'
+      'index.html',
+      'main.css'
    ];
 
    browserSync(files,{

@@ -29,10 +29,27 @@
    100%
       background-color: #ccf
 
+
+// Fade In
 +keyframes(fadeIn)
 
    0%
-      +transform(translate3d(0,100%,0))
+      opacity: 0
+
+   50%
+      opacity: 0.5
+
+   100%
+      opacity: 1
+
+
+
+// Fade In Down
+
++keyframes(fadeInDown)
+
+   0%
+      +transform(translate3d(0,-100%,0))
       opacity: 0
 
    50%
@@ -41,11 +58,14 @@
    100%
       +transform(translate3d(0))
       opacity: 1
+
+
+// Fade In Left
 
 +keyframes(fadeInLeft)
 
    0%
-      +transform(translate3d(-200%,0,0))
+      +transform(translate3d(-100%,0,0))
       opacity: 0
 
    50%
@@ -54,11 +74,13 @@
    100%
       +transform(translate3d(0))
       opacity: 1
+
+// Fade In Right
 
 +keyframes(fadeInRight)
 
    0%
-      +transform(translate3d(200%,0,0))
+      +transform(translate3d(100%,0,0))
       opacity: 0
 
    50%
@@ -68,31 +90,37 @@
       +transform(translate3d(0))
       opacity: 1
 
-+keyframes(splash)
+// Fade In Up
+
++keyframes(fadeInUp)
 
    0%
-      +transform(scale3d(0))
+      +transform(translate3d(0,-100%,0))
       opacity: 0
 
    50%
-      +transform(scale3d(1.02,1.02,2))
-      opacity: .5
-   90%
-      +transform(scale3d(1.5,1.5,1.5))
-      opacity: 0.9
+
+      opacity: 0.45
+
    100%
-      +transform(scale3d(1))
-      opacity: 1
+
+      +transform(translate3d(0))
 
 
+// Bounce
 
-body
-   background: blue
++keyframes(bounce)
 
+   0%, 50%, 80%, 100%
+      +transform(translateY(0))
 
-   .square
-      width: 200px
-      height: 200px
-      display: block
-      background: navajowhite
-      margin: 50px auto
+   20%, 70%, 90%
+      +transform(translateY(-30px))
+
++keyframes(shake)
+
+   0%, 50%, 80%, 100%
+      +transform(translateX(0))
+
+   20%, 70%, 90%
+      +transform(translateX(-30px))

@@ -25,7 +25,37 @@
 
    </div>
 
+   <button id='bounce'>Bounce</button>
+   <button id='shake'>Shake</button>
+   <button id='tada'>Tada</button>
+
+   <script>
+
+      // Global Vars
+      var bounceBtn = document.getElementById('bounce'),
+          shakeBtn  = document.getElementById('shake'),
+          tadaBtn   = document.getElementById('tada');
+      // target the button
+
+      bounceBtn.addEventListener('click', function(){
+         this.classList.add('bounce');
+      }, false)
+
+      shakeBtn.addEventListener('click', function(){
+
+         this.classList.add('shake');
+
+      },false)
+
+      tadaBtn.addEventListener('click', function(){
+
+         this.classList.add('tada');
+
+      },false);
 
 
+
+
+   </script>
 </body>
 </html>

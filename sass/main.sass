@@ -7,7 +7,7 @@ body
 
    .container
       +outer-container
-      height: 200px
+      height: 210px
       background: beige
       +display(flex)
       +align-items(stretch)
@@ -18,14 +18,61 @@ body
          margin: 0 22px
          height: auto
          background: palevioletred
-         +animation('splash 2s .9s 1 ease-in forwards')
 
          &:first-child
 
             background: lightsalmon
-            +animation('fadeInLeft 2s 3 ease-in forwards')
+            // +animation('fadeInLeft 2s 3 ease-in forwards')
 
          &:last-child
 
             background: navajowhite
-            +animation('fadeInRight 2s 3 ease-in forwards')
+            // +animation('fadeInRight 2s 3 ease-in forwards')
+
+   .square
+      width: 200px
+      height: 200px
+      display: block
+      background: navajowhite
+      margin: 50px auto
+      +animation('bounce 1s linear forwards')
+
+   // buttons
+   button
+      display: block
+      border: none
+      padding: 20px 35px
+      text-transform: uppercase
+      letter-spacing: 1px
+      font-family: helvetica
+      margin-bottom: 40px
+      margin-left: auto
+      margin-right: auto
+      width: 150px
+      cursor: pointer
+      border-radius: 5px
+      color: white
+      font-size: 16px
+      +transition
+
+      &#bounce
+
+         background: firebrick
+         box-shadow: 0 5px 0 darken(firebrick, 15%)
+         // +transform-origin(center bottom)
+
+      &#shake
+
+         background: seagreen
+         box-shadow: 0 5px 0 darken(seagreen, 15%)
+
+      &#tada
+
+         background: salmon
+         box-shadow: 0 5px 0 darken(salmon, 15%)
+
+      &.bounce
+         +animation('bounce 1s linear forwards')
+
+      &.shake
+         +animation('shake 1s linear forwards')
