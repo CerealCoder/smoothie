@@ -25,31 +25,93 @@
 
    </div>
 
-   <button id='bounce'>Bounce</button>
-   <button id='shake'>Shake</button>
-   <button id='tada'>Tada</button>
+   <section class="general">
+      <h1>General animations</h1>
+      <div class="square2"></div>
+      <div class="belt">
+         <button id='bounce-general'>Fade In</button>
+         <button id='pulse'>Fade In Up</button>
+         <button id='rubberband'>Fade In Right</button> <!-- remove it afterwards -->
+         <button id='shake'>Fade In Down</button>
+         <button id='tada'>Fade In Left</button> <!-- Remove it afterwards -->
+         <button id='flip-in-x'>Flip-in X</button>
+         <button id='flip-in-y'>Flip-in Y</button>
+         <button id='spin'>Spin</button>
+      </div>
+   </section>
+
+   <section class="fade">
+      <h1>Fading animations</h1>
+      <div class="square2"></div>
+      <div class="belt">
+         <button id='fade-in'>Fade In</button>
+         <button id='fade-in-up'>Fade In Up</button>
+         <button id='fade-in-right'>Fade In Right</button>
+         <button id='fade-in-down'>Fade In Down</button>
+         <button id='fade-in-left'>Fade In Left</button>
+      </div>
+   </section>
+
+   <section class="bounce">
+      <h1>Bouncing animations</h1>
+      <div class="square2"></div>
+      <div class="belt">
+         <button id='bounce-in'>Fade In</button>
+         <button id='bounce-in-up'>Fade In Up</button>
+         <button id='bounce-in-right'>Fade In Right</button>
+         <button id='bounce-in-down'>Fade In Down</button>
+         <button id='bounce-in-left'>Fade In Left</button>
+      </div>
+   </section>
+
+
 
    <script>
 
       // Global Vars
       var bounceBtn = document.getElementById('bounce'),
           shakeBtn  = document.getElementById('shake'),
-          tadaBtn   = document.getElementById('tada');
+          tadaBtn   = document.getElementById('tada'),
+          mainBox   = document.querySelector('.square');
       // target the button
 
       bounceBtn.addEventListener('click', function(){
-         this.classList.add('bounce');
+         mainBox.classList.add('bounce');
       }, false)
 
       shakeBtn.addEventListener('click', function(){
 
-         this.classList.add('shake');
+         mainBox.classList.add('shake');
 
       },false)
 
       tadaBtn.addEventListener('click', function(){
 
-         this.classList.add('tada');
+         mainBox.classList.add('tada');
+
+      },false);
+
+      tadaBtn.addEventListener('click', function(){
+
+         mainBox.classList.add('tada');
+
+      },false);
+
+      tadaBtn.addEventListener('click', function(){
+
+         mainBox.classList.add('tada');
+
+      },false);
+
+      tadaBtn.addEventListener('click', function(){
+
+         mainBox.classList.add('tada');
+
+      },false);
+
+      tadaBtn.addEventListener('click', function(){
+
+         mainBox.classList.add('tada');
 
       },false);
 

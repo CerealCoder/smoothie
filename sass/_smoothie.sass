@@ -20,16 +20,6 @@
    @keyframes #{$name}
       @content
 
-// use of keyframes mixin
-+keyframes(bgcolor)
-   0%
-      background-color: #ffc
-   50%
-      background-color: #fcf
-   100%
-      background-color: #ccf
-
-
 // Fade In
 +keyframes(fadeIn)
 
@@ -41,8 +31,6 @@
 
    100%
       opacity: 1
-
-
 
 // Fade In Down
 
@@ -111,11 +99,28 @@
 
 +keyframes(bounce)
 
-   0%, 50%, 80%, 100%
+   0%
+      +transform(translateY(-60px))
+      opacity: 0
+   40%
+      +transform(translateY(0))
+      opacity: 1
+
+   55%
+      +transform(translateY(-15px))
+
+   70%
+
       +transform(translateY(0))
 
-   20%, 70%, 90%
-      +transform(translateY(-30px))
+   80%
+      +transform(translateY(-10px))
+
+   100%
+      +transform(translateY(0))
+
+
+// Shake
 
 +keyframes(shake)
 

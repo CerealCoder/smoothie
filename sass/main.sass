@@ -1,9 +1,31 @@
 @import 'base/index'
 @import 'smoothie'
 
+.bounce
+   +animation('bounce 1s linear forwards')
+
+.shake
+   +animation('shake 1s linear forwards')
+
+.fade-in
+   +animation('fadeIn 1s linear forwards')
+
+.fade-in-down
+   +animation('fadeInDown 1s linear forwards')
+
+.fade-in-up
+   +animation('fadeInUp 1s linear forwards')
+
+.fade-in-left
+   +animation('fadeInLeft 1s linear forwards')
+
+.fade-in-right
+   +animation('fadeInRight 1s linear forwards')
+
 body
    background: steelblue
-   overflow: hidden
+   font-family: $helvetica
+   color: white
 
    .container
       +outer-container
@@ -35,7 +57,7 @@ body
       display: block
       background: navajowhite
       margin: 50px auto
-      +animation('bounce 1s linear forwards')
+      +animation('bounce 1s ease forwards')
 
    // buttons
    button
@@ -53,26 +75,44 @@ body
       border-radius: 5px
       color: white
       font-size: 16px
+      background: salmon
+      box-shadow: 0 5px 0 darken(salmon, 15%)
       +transition
 
-      &#bounce
+      &:active,
+         outline: 0
+         box-shadow: none
+      &:focus
+         outline: 0
 
-         background: firebrick
-         box-shadow: 0 5px 0 darken(firebrick, 15%)
-         // +transform-origin(center bottom)
 
-      &#shake
 
-         background: seagreen
-         box-shadow: 0 5px 0 darken(seagreen, 15%)
+   section
+      background: navajowhite
+      padding-top: 20px
+      +outer-container
+      margin-bottom: 30px
 
-      &#tada
+      h1
+         font-size: 32px
+         text-align: center
+         margin: 0
+         text-shadow: -1px -1px 2px darkslategrey
+         letter-spacing: 1.95px
 
-         background: salmon
-         box-shadow: 0 5px 0 darken(salmon, 15%)
+      .square2
+         +size(200px)
+         background: darkseagreen
+         margin-left: auto
+         margin-right: auto
+         margin-top: 40px
 
-      &.bounce
-         +animation('bounce 1s linear forwards')
+      .belt
 
-      &.shake
-         +animation('shake 1s linear forwards')
+         margin-top: 40px
+         +display(flex)
+         +flex-flow(row wrap)
+
+         button
+            width: 20%
+            margin-right: 2%
