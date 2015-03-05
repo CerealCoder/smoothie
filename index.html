@@ -65,6 +65,19 @@
       </div>
    </section>
 
+   <section class="fade-out">
+      <h1>Fade-out animations</h1>
+      <div class="square4"></div>
+      <div class="belt">
+         <button id="fade-out">Fade Out</button>
+         <button id="fade-out-up">Fade Out Up</button>
+         <button id="fade-out-down">Fade Out Down</button>
+         <button id="fade-out-left">Fade Out Left</button>
+         <button id="fade-out-right">Fade Out Right</button>
+         <button id="fade-out-scale">Fade Out Scale</button>
+      </div>
+   </section>
+
    <section class="other">
       <h1>Other Cool Animations</h1>
       <div class="square3"></div>
@@ -79,60 +92,18 @@
          <button id="bounce-stretch-left">Bounce Stretch Left</button>
          <button id="bounce-stretch-up">Bounce Stretch Up</button>
          <button id="bounce-stretch-down">Bounce Stretch Down</button>
+         <button id="sticky-up">Sticky Up</button>
+         <button id="sticky-down">Sticky Down</button>
+         <button id="blur">Blur</button>
+         <button id="just-me">Just Me</button>
       </div>
    </section>
 
    <script>
 
-      // Global Vars
-      var bounceBtn = document.getElementById('bounce'),
-          shakeBtn  = document.getElementById('shake'),
-          tadaBtn   = document.getElementById('tada'),
-          mainBox   = document.querySelector('.square');
-      // target the button
+      var square = document.querySelector('.square');
 
-      bounceBtn.addEventListener('click', function(){
-         mainBox.classList.add('bounce');
-      }, false)
-
-      shakeBtn.addEventListener('click', function(){
-
-         mainBox.classList.add('shake');
-
-      },false)
-
-      tadaBtn.addEventListener('click', function(){
-
-         mainBox.classList.add('tada');
-
-      },false);
-
-      tadaBtn.addEventListener('click', function(){
-
-         mainBox.classList.add('tada');
-
-      },false);
-
-      tadaBtn.addEventListener('click', function(){
-
-         mainBox.classList.add('tada');
-
-      },false);
-
-      tadaBtn.addEventListener('click', function(){
-
-         mainBox.classList.add('tada');
-
-      },false);
-
-      tadaBtn.addEventListener('click', function(){
-
-         mainBox.classList.add('tada');
-
-      },false);
-
-
-
+      square.classList.add('bounce');
 
    </script>
 </body>

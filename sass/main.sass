@@ -1,11 +1,8 @@
 @import 'base/index'
 @import 'smoothie'
 
-.bounce
-   +animation('bounce 1s linear forwards')
-
-.shake
-   +animation('shake 1s linear forwards')
+.bounce-in
+   +animation('bounce .78s ease-out forwards')
 
 .fade-in
    +animation('fadeIn 1s linear forwards')
@@ -22,6 +19,8 @@
 .fade-in-right
    +animation('fadeInRight 1s linear forwards')
 
+.shake
+   +animation('shake .6s ease-out forwards')
 body
    background: steelblue
    font-family: $helvetica
@@ -57,7 +56,6 @@ body
       display: block
       background: navajowhite
       margin: 50px auto
-      +animation('bounce 1s ease forwards')
 
    // buttons
    button
