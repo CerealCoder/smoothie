@@ -25,12 +25,15 @@
 
    0%
       opacity: 0
+      +transform(scale(0))
 
    50%
       opacity: 0.5
+      +transform(scale(0.6))
 
    100%
       opacity: 1
+      +transform(scale(1))
 
 // Fade In Down
 
@@ -97,7 +100,7 @@
 
 // Bounce
 
-+keyframes(bounce)
++keyframes(bounce-in)
 
    0%
       +transform(translateY(-60px))
@@ -117,12 +120,6 @@
       +transform(translateY(-14px))
 
 
-
-
-
-
-
-
 // Shake
 
 +keyframes(shake)
@@ -136,3 +133,17 @@
    30%,60%, 80%
 
       +transform(translateX(20px))
+
+
+// Pulse scale
+
++keyframes(pulseScale)
+
+   0%, 100%
+      opacity: 0.25
+      +transform(scale(1))
+
+   50%
+
+      opacity: 1
+      +transform(scale(1.2))

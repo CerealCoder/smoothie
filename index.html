@@ -50,6 +50,7 @@
          <button id='fade-in-right'>Fade In Right</button>
          <button id='fade-in-down'>Fade In Down</button>
          <button id='fade-in-left'>Fade In Left</button>
+         <button id='fade-in-left'>Fade In bounce</button>
       </div>
    </section>
 
@@ -101,9 +102,24 @@
 
    <script>
 
+      function animate(element,duration, delay, iterations, ease, fillMode) {
+
+         element.style.webkitAnimationDuration = duration;
+         element.style.webkitAnimationDelay = delay;
+         element.style.webkitAnimationIterationCount = iterations;
+         element.style.webkitAnimationTimingFunction = ease;
+         element.style.webkitAnimationFillMode = fillMode;
+
+      }
+
+
       var square = document.querySelector('.square');
 
-      square.classList.add('bounce');
+      square.classList.add('fade-in');
+      square.style.webkitAnimationTimingFunction = 'ease-ins';
+      square.style.webkitAnimationDuration = '.65s';
+
+
 
    </script>
 </body>
