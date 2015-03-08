@@ -3,27 +3,16 @@
 <head>
    <meta charset="UTF-8">
    <title>Document</title>
-   <meta name='viewport' content=" width='device-width, initial-scale=1' ">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
    <link rel="stylesheet" href="main.css">
 </head>
 <body>
 
-   <div class="container">
-
-      <div class="item">
-
-      </div>
-      <div class="item">
-
-      </div>
-      <div class="item">
-      </div>
-
-   </div>
-
    <div class="square">
-
+      <img src="img/skoff-logo-colour.png" alt="">
    </div>
+
+   <h1 class="title">Karim Cheurfi</h1>
 
    <section class="general">
       <h1>General animations</h1>
@@ -32,12 +21,11 @@
          <button id='bounce-general'>Bounce</button>
          <button id="fade-in-general">Fade In</button>
          <button id='pulse'>Scale pulse</button> <!-- scale pulse -->
-         <button id='rubberband'>Rubberband</button> <!-- remove it afterwards -->
          <button id='shake'>Shake</button>
-         <button id='tada'>Tada</button> <!-- Remove it afterwards -->
          <button id='flip-in-x'>Flip-in X</button>
          <button id='flip-in-y'>Flip-in Y</button>
          <button id='spin'>Spin</button>
+         <button id="rotate-fade-in">Rotate fade in</button>
       </div>
    </section>
 
@@ -53,6 +41,7 @@
          <button id='fade-in-left'>Fade In bounce</button>
       </div>
    </section>
+
 
    <section class="bounce">
       <h1>Bouncing animations</h1>
@@ -79,7 +68,7 @@
       </div>
    </section>
 
-   <section class="other">
+   <section class="other-2">
       <h1>Other Cool Animations</h1>
       <div class="square3"></div>
       <div class="belt">
@@ -102,24 +91,27 @@
 
    <script>
 
-      function animate(element,duration, delay, iterations, ease, fillMode) {
-
-         element.style.webkitAnimationDuration = duration;
-         element.style.webkitAnimationDelay = delay;
-         element.style.webkitAnimationIterationCount = iterations;
-         element.style.webkitAnimationTimingFunction = ease;
-         element.style.webkitAnimationFillMode = fillMode;
-
-      }
-
-
+      // logo
       var square = document.querySelector('.square');
 
-      square.classList.add('fade-in');
-      square.style.webkitAnimationTimingFunction = 'ease-ins';
-      square.style.webkitAnimationDuration = '.65s';
+      //square.classList.add('gravitate-x');
+      square.style.webkitAnimationTimingFunction = 'linear';
+      square.style.webkitAnimationDuration = '1.3s';
+      square.style.webkitAnimationFillMode = 'forwards';
+      //square.style.webkitAnimationIterationCount = 'infinite';
 
+      // Heading Text
+      var title = document.querySelector('.title');
+      //title.classList.add('gravitate-x');
+      title.style.webkitAnimationTimingFunction = 'linear';
+      title.style.webkitAnimationDuration = '.71s';
+      title.style.webkitAnimationFillMode = 'forwards';
+      title.style.webkitAnimationIterationCount = 'infinite';
 
+      // Overlay
+      var container = document.querySelector('body');
+      var bodyChildren = container.children;
+      console.log(bodyChildren);
 
    </script>
 </body>

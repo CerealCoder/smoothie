@@ -1,8 +1,44 @@
 @import 'base/index'
 @import 'smoothie'
 
-.bounce-in
-   +animation('bounce-in .78s ease-out forwards')
+.gravitate-x
+   +animation('gravitateX 1s infinite linear')
+
+.gravitate-y
+   +animation('gravitateY 1s infinite linear')
+
+.fade-out
+   +animation('fadeOut 1s linear both')
+
+.fade-out-down
+   +animation('fadeOutDown 1s linear both')
+
+.fade-out-left
+   +animation('fadeOutLeft 1s linear both')
+
+.fade-out-right
+   +animation('fadeOutRight 1s linear both')
+
+.fade-out-up
+   +animation('fadeOutUp 1s linear both')
+
+.bounce-in-scale
+   +animation('bounceInScale 1s ease-out forwards')
+
+.bounce-in-down
+   +animation('bounceInDown 1s ease-out both')
+
+.bounce-in-up
+   +animation('bounceInUp 1s linear both')
+
+.bounce-in-left
+   +animation('bounceInLeft 1s ease-in-out forwards')
+
+.bounce-in-right
+   +animation('bounceInRight 1s ease-in-out forwards')
+
+.flip-top
+   +animation('flipTop 1s ease-out forwards')
 
 .fade-in
    +animation('fadeIn 1s linear forwards')
@@ -20,45 +56,57 @@
    +animation('fadeInRight 1s linear forwards')
 
 .shake
-   +animation('shake .6s ease-out forwards')
+   +animation('shake 1s ease-out forwards')
 
 .pulse-scale
-   +animation('pulseScale 7s ease-out forwards')
+   +animation('pulseScale 1s ease-out forwards')
+
+.fade-in-scale-bounce
+   +animation('fadeInScaleBounce 1s ease-out forwards')
+
+.flip-top
+   +animation('flipTop 1s ease-out forwards')
+
+.spin-clockwise
+   +animation('spin 1s infinite linear')
+
+.spin-reverse
+   +animation('spin 1s infinite reverse linear')
+
 body
    background: steelblue
    font-family: $helvetica
    color: white
+   position: relative
+   padding-top: 50%
 
-   .container
-      +outer-container
-      height: 210px
-      background: beige
-      +display(flex)
-      +align-items(stretch)
-      +justify-content(space-around)
-
-      .item
-         width: 33%
-         margin: 0 22px
-         height: auto
-         background: palevioletred
-
-         &:first-child
-
-            background: lightsalmon
-            // +animation('fadeInLeft 2s 3 ease-in forwards')
-
-         &:last-child
-
-            background: navajowhite
-            // +animation('fadeInRight 2s 3 ease-in forwards')
+   section
+      display: none
 
    .square
       width: 200px
       height: 200px
       display: block
-      background: navajowhite
-      margin: 50px auto
+      +display(flex)
+      +align-items(center)
+      +justify-content(center)
+      -webkit-backface-visibility: hidden
+      margin-left: auto
+      margin-right: auto
+
+      img
+
+         width: 100%
+         height: auto
+         display: block
+
+   h1
+      font-size: 33px
+      text-align: center
+      margin-top: 80px
+      text-transform: uppercase
+      letter-spacing: 1px
+      text-shadow: -1px 1px 0 #123
 
    // buttons
    button
@@ -85,8 +133,6 @@ body
          box-shadow: none
       &:focus
          outline: 0
-
-
 
    section
       background: navajowhite
