@@ -1,6 +1,25 @@
 @import 'base/index'
 @import 'smoothie'
 
+.expand-right
+   +animation('expandX 1s linear forwards')
+   +transform-origin(left center)
+
+.expand-left
+   +animation('expandX 1s linear forwards')
+   +transform-origin(right center)
+
+.expand-top
+   +animation('expandY 1s linear forwards')
+   +transform-origin(bottom center)
+
+.expand-bottom
+   +animation('expandY 1s linear forwards')
+   +transform-origin(top center)
+
+.ghost-material
+   +animation('ghostMaterial 1s linear forwards')
+
 .gravitate-x
    +animation('gravitateX 1s infinite linear')
 
@@ -78,7 +97,7 @@ body
    font-family: $helvetica
    color: white
    position: relative
-   padding-top: 50%
+   padding-top: 15%
 
    section
       display: none
@@ -107,6 +126,21 @@ body
       text-transform: uppercase
       letter-spacing: 1px
       text-shadow: -1px 1px 0 #123
+
+   .square-container
+
+      width: 200px
+      height: 340px
+      margin-left: auto
+      margin-right: auto
+      border-radius: 4px
+      border: 2px solid snow
+
+      .fill
+         +size(100%)
+         background: lemonchiffon
+
+
 
    // buttons
    button

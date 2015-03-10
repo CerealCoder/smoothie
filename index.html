@@ -14,6 +14,10 @@
 
    <h1 class="title">Karim Cheurfi</h1>
 
+   <div class="square-container">
+      <div class="fill"></div>
+   </div>
+
    <section class="general">
       <h1>General animations</h1>
       <div class="square2"></div>
@@ -94,24 +98,28 @@
       // logo
       var square = document.querySelector('.square');
 
-      //square.classList.add('gravitate-x');
+      square.classList.add('fade-in-up-stretch');
       square.style.webkitAnimationTimingFunction = 'linear';
-      square.style.webkitAnimationDuration = '1.3s';
-      square.style.webkitAnimationFillMode = 'forwards';
+      square.style.webkitAnimationDuration = '2.3s';
+      square.style.webkitAnimationFillMode = 'both';
       //square.style.webkitAnimationIterationCount = 'infinite';
 
       // Heading Text
-      var title = document.querySelector('.title');
+      //var title = document.querySelector('.title');
       //title.classList.add('gravitate-x');
-      title.style.webkitAnimationTimingFunction = 'linear';
-      title.style.webkitAnimationDuration = '.71s';
-      title.style.webkitAnimationFillMode = 'forwards';
-      title.style.webkitAnimationIterationCount = 'infinite';
+      //title.style.webkitAnimationTimingFunction = 'linear';
+      //title.style.webkitAnimationDuration = '.71s';
+      //title.style.webkitAnimationFillMode = 'forwards';
+      //title.style.webkitAnimationIterationCount = 'infinite';
 
-      // Overlay
-      var container = document.querySelector('body');
-      var bodyChildren = container.children;
-      console.log(bodyChildren);
+
+      // Progress bar div
+
+      var bar = document.querySelector('.square-container .fill');
+      bar.classList.add('expand-bottom');
+      bar.style.webkitAnimationTimingFunction = 'linear';
+      bar.style.webkitAnimationDuration = '1.78s';
+      bar.style.webkitAnimationFillMode = 'forwards';
 
    </script>
 </body>
