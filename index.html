@@ -12,6 +12,8 @@
       <img src="img/skoff-logo-colour.png" alt="">
    </div>
 
+   <div class="overlay"></div>
+
    <h1 class="title">Karim Cheurfi</h1>
 
    <div class="square-container">
@@ -98,10 +100,10 @@
       // logo
       var square = document.querySelector('.square');
 
-      square.classList.add('fade-in-up-stretch');
+      square.classList.add('blue');
       square.style.webkitAnimationTimingFunction = 'linear';
-      square.style.webkitAnimationDuration = '2.3s';
-      square.style.webkitAnimationFillMode = 'both';
+      square.style.webkitAnimationDuration = '.69s';
+      square.style.webkitAnimationFillMode = 'forwards';
       //square.style.webkitAnimationIterationCount = 'infinite';
 
       // Heading Text
@@ -116,9 +118,9 @@
       // Progress bar div
 
       var bar = document.querySelector('.square-container .fill');
-      bar.classList.add('expand-bottom');
-      bar.style.webkitAnimationTimingFunction = 'linear';
-      bar.style.webkitAnimationDuration = '1.78s';
+      bar.classList.add('expand-bounce-right');
+      bar.style.webkitAnimationTimingFunction = 'ease-out';
+      bar.style.webkitAnimationDuration = '1s';
       bar.style.webkitAnimationFillMode = 'forwards';
 
    </script>

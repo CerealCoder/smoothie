@@ -1,6 +1,14 @@
 @import 'base/index'
 @import 'smoothie'
 
+.expand-bounce-right
+   +animation('expandBounceX 1s linear forwards')
+   +transform-origin(left center)
+
+.expand-bounce-left
+   +animation('expandBounceX 1s linear forwards')
+   +transform-origin(right center)
+
 .expand-right
    +animation('expandX 1s linear forwards')
    +transform-origin(left center)
@@ -13,6 +21,14 @@
    +animation('expandY 1s linear forwards')
    +transform-origin(bottom center)
 
+.expand-bounce-top
+   +animation('expandBounceY 1s linear forwards')
+   +transform-origin(bottom center)
+
+.expand-bounce-bottom
+   +animation('expandBounceY 1s linear forwards')
+   +transform-origin(top center)
+
 .expand-bottom
    +animation('expandY 1s linear forwards')
    +transform-origin(top center)
@@ -20,26 +36,23 @@
 .ghost-material
    +animation('ghostMaterial 1s linear forwards')
 
-.gravitate-x
-   +animation('gravitateX 1s infinite linear')
-
 .gravitate-y
    +animation('gravitateY 1s infinite linear')
 
 .fade-out
-   +animation('fadeOut 1s linear both')
+   +animation('fadeOut 1s linear forwards')
 
 .fade-out-down
-   +animation('fadeOutDown 1s linear both')
+   +animation('fadeOutDown 1s linear forwards')
 
 .fade-out-left
-   +animation('fadeOutLeft 1s linear both')
+   +animation('fadeOutLeft 1s linear forwards')
 
 .fade-out-right
-   +animation('fadeOutRight 1s linear both')
+   +animation('fadeOutRight 1s linear forwards')
 
 .fade-out-up
-   +animation('fadeOutUp 1s linear both')
+   +animation('fadeOutUp 1s linear forwards')
 
 .bounce-in-scale
    +animation('bounceInScale 1s ease-out forwards')
@@ -83,21 +96,28 @@
 .fade-in-scale-bounce
    +animation('fadeInScaleBounce 1s ease-out forwards')
 
-.flip-top
-   +animation('flipTop 1s ease-out forwards')
-
 .spin-clockwise
    +animation('spin 1s infinite linear')
 
 .spin-reverse
    +animation('spin 1s infinite reverse linear')
 
+html
+   position: relative
+
 body
    background: steelblue
    font-family: $helvetica
    color: white
-   position: relative
    padding-top: 15%
+
+   .overlay
+      position: absolute
+      top: 0
+      left: 0
+      max-width: 400px
+      height: 200px
+      background: firebrick
 
    section
       display: none
@@ -126,6 +146,7 @@ body
       text-transform: uppercase
       letter-spacing: 1px
       text-shadow: -1px 1px 0 #123
+      display: none
 
    .square-container
 
@@ -135,6 +156,7 @@ body
       margin-right: auto
       border-radius: 4px
       border: 2px solid snow
+      margin-top: 40px
 
       .fill
          +size(100%)
