@@ -473,3 +473,26 @@
 
    100%
       +transform(scaleY(1))
+
+// Rubberband
+
++keyframes(rubberband)
+
+   0%
+      +transform(scaleX(1))
+      opacity: 0
+   20%
+      +transform(scaleX(1.4))
+   43%
+      +transform(scaleX(.81))
+      opacity: 1
+   57%
+      +transform(scaleX(1.2))
+   69%
+      +transform(scaleX(.89))
+   77%
+      +transform(scaleX(1.1))
+   89%
+      +transform(scaleX(.91))
+   100%
+      +transform(1)

@@ -8,6 +8,8 @@
 </head>
 <body>
 
+   <button class='subscribe'>Subscribe</button>
+
    <div class="square">
       <img src="img/skoff-logo-colour.png" alt="">
    </div>
@@ -63,7 +65,7 @@
 
    <section class="fade-out">
       <h1>Fade-out animations</h1>
-      <div class="square4"></div>
+      <div class="square2"></div>
       <div class="belt">
          <button id="fade-out">Fade Out</button>
          <button id="fade-out-up">Fade Out Up</button>
@@ -76,7 +78,7 @@
 
    <section class="other-2">
       <h1>Other Cool Animations</h1>
-      <div class="square3"></div>
+      <div class="square2"></div>
       <div class="belt">
          <button id="float">Float</button>
          <button id="toss">Toss</button>
@@ -97,31 +99,38 @@
 
    <script>
 
-      // logo
-      var square = document.querySelector('.square');
+      // button
+      var theBtn = document.querySelector('.subscribe');
 
-      square.classList.add('blue');
-      square.style.webkitAnimationTimingFunction = 'linear';
-      square.style.webkitAnimationDuration = '.69s';
-      square.style.webkitAnimationFillMode = 'forwards';
-      //square.style.webkitAnimationIterationCount = 'infinite';
+      theBtn.classList.add('rubberband');
+      theBtn.style.webkitAnimationTimingFunction = 'ease-out';
+      theBtn.style.webkitAnimationDuration = '1s';
+      theBtn.style.webkitAnimationFillMode = 'forwards';
 
-      // Heading Text
-      //var title = document.querySelector('.title');
-      //title.classList.add('gravitate-x');
-      //title.style.webkitAnimationTimingFunction = 'linear';
-      //title.style.webkitAnimationDuration = '.71s';
-      //title.style.webkitAnimationFillMode = 'forwards';
-      //title.style.webkitAnimationIterationCount = 'infinite';
+      // make elements appear on scroll
+
+      window.addEventListener('scroll', function(){
+
+         var scrollTop = this.pageYOffset;
+         var sections = document.querySelectorAll('section');
 
 
-      // Progress bar div
+         for ( var i = 0; i < sections.length; i++ ){
 
-      var bar = document.querySelector('.square-container .fill');
-      bar.classList.add('expand-bounce-right');
-      bar.style.webkitAnimationTimingFunction = 'ease-out';
-      bar.style.webkitAnimationDuration = '1s';
-      bar.style.webkitAnimationFillMode = 'forwards';
+            var element = sections[i];
+            var square = element.querySelector('.square2');
+
+
+            if ( scrollTop < element.offsetTop + 400) {
+
+               square.classList.add('rubberband');
+               console.log(square.getAttribute('class'));
+
+            }
+
+         }
+
+      }, false);
 
    </script>
 </body>

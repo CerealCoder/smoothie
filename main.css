@@ -3118,6 +3118,254 @@ html {
     transform: scaleY(1);
   }
 }
+@-webkit-keyframes rubberband {
+  0% {
+    -webkit-transform: scaleX(1);
+    -moz-transform: scaleX(1);
+    -ms-transform: scaleX(1);
+    -o-transform: scaleX(1);
+    transform: scaleX(1);
+    opacity: 0;
+  }
+  20% {
+    -webkit-transform: scaleX(1.4);
+    -moz-transform: scaleX(1.4);
+    -ms-transform: scaleX(1.4);
+    -o-transform: scaleX(1.4);
+    transform: scaleX(1.4);
+  }
+  43% {
+    -webkit-transform: scaleX(0.81);
+    -moz-transform: scaleX(0.81);
+    -ms-transform: scaleX(0.81);
+    -o-transform: scaleX(0.81);
+    transform: scaleX(0.81);
+    opacity: 1;
+  }
+  57% {
+    -webkit-transform: scaleX(1.2);
+    -moz-transform: scaleX(1.2);
+    -ms-transform: scaleX(1.2);
+    -o-transform: scaleX(1.2);
+    transform: scaleX(1.2);
+  }
+  69% {
+    -webkit-transform: scaleX(0.89);
+    -moz-transform: scaleX(0.89);
+    -ms-transform: scaleX(0.89);
+    -o-transform: scaleX(0.89);
+    transform: scaleX(0.89);
+  }
+  77% {
+    -webkit-transform: scaleX(1.1);
+    -moz-transform: scaleX(1.1);
+    -ms-transform: scaleX(1.1);
+    -o-transform: scaleX(1.1);
+    transform: scaleX(1.1);
+  }
+  89% {
+    -webkit-transform: scaleX(0.91);
+    -moz-transform: scaleX(0.91);
+    -ms-transform: scaleX(0.91);
+    -o-transform: scaleX(0.91);
+    transform: scaleX(0.91);
+  }
+  100% {
+    -webkit-transform: 1;
+    -moz-transform: 1;
+    -ms-transform: 1;
+    -o-transform: 1;
+    transform: 1;
+  }
+}
+@-moz-keyframes rubberband {
+  0% {
+    -webkit-transform: scaleX(1);
+    -moz-transform: scaleX(1);
+    -ms-transform: scaleX(1);
+    -o-transform: scaleX(1);
+    transform: scaleX(1);
+    opacity: 0;
+  }
+  20% {
+    -webkit-transform: scaleX(1.4);
+    -moz-transform: scaleX(1.4);
+    -ms-transform: scaleX(1.4);
+    -o-transform: scaleX(1.4);
+    transform: scaleX(1.4);
+  }
+  43% {
+    -webkit-transform: scaleX(0.81);
+    -moz-transform: scaleX(0.81);
+    -ms-transform: scaleX(0.81);
+    -o-transform: scaleX(0.81);
+    transform: scaleX(0.81);
+    opacity: 1;
+  }
+  57% {
+    -webkit-transform: scaleX(1.2);
+    -moz-transform: scaleX(1.2);
+    -ms-transform: scaleX(1.2);
+    -o-transform: scaleX(1.2);
+    transform: scaleX(1.2);
+  }
+  69% {
+    -webkit-transform: scaleX(0.89);
+    -moz-transform: scaleX(0.89);
+    -ms-transform: scaleX(0.89);
+    -o-transform: scaleX(0.89);
+    transform: scaleX(0.89);
+  }
+  77% {
+    -webkit-transform: scaleX(1.1);
+    -moz-transform: scaleX(1.1);
+    -ms-transform: scaleX(1.1);
+    -o-transform: scaleX(1.1);
+    transform: scaleX(1.1);
+  }
+  89% {
+    -webkit-transform: scaleX(0.91);
+    -moz-transform: scaleX(0.91);
+    -ms-transform: scaleX(0.91);
+    -o-transform: scaleX(0.91);
+    transform: scaleX(0.91);
+  }
+  100% {
+    -webkit-transform: 1;
+    -moz-transform: 1;
+    -ms-transform: 1;
+    -o-transform: 1;
+    transform: 1;
+  }
+}
+@-ms-keyframes rubberband {
+  0% {
+    -webkit-transform: scaleX(1);
+    -moz-transform: scaleX(1);
+    -ms-transform: scaleX(1);
+    -o-transform: scaleX(1);
+    transform: scaleX(1);
+    opacity: 0;
+  }
+  20% {
+    -webkit-transform: scaleX(1.4);
+    -moz-transform: scaleX(1.4);
+    -ms-transform: scaleX(1.4);
+    -o-transform: scaleX(1.4);
+    transform: scaleX(1.4);
+  }
+  43% {
+    -webkit-transform: scaleX(0.81);
+    -moz-transform: scaleX(0.81);
+    -ms-transform: scaleX(0.81);
+    -o-transform: scaleX(0.81);
+    transform: scaleX(0.81);
+    opacity: 1;
+  }
+  57% {
+    -webkit-transform: scaleX(1.2);
+    -moz-transform: scaleX(1.2);
+    -ms-transform: scaleX(1.2);
+    -o-transform: scaleX(1.2);
+    transform: scaleX(1.2);
+  }
+  69% {
+    -webkit-transform: scaleX(0.89);
+    -moz-transform: scaleX(0.89);
+    -ms-transform: scaleX(0.89);
+    -o-transform: scaleX(0.89);
+    transform: scaleX(0.89);
+  }
+  77% {
+    -webkit-transform: scaleX(1.1);
+    -moz-transform: scaleX(1.1);
+    -ms-transform: scaleX(1.1);
+    -o-transform: scaleX(1.1);
+    transform: scaleX(1.1);
+  }
+  89% {
+    -webkit-transform: scaleX(0.91);
+    -moz-transform: scaleX(0.91);
+    -ms-transform: scaleX(0.91);
+    -o-transform: scaleX(0.91);
+    transform: scaleX(0.91);
+  }
+  100% {
+    -webkit-transform: 1;
+    -moz-transform: 1;
+    -ms-transform: 1;
+    -o-transform: 1;
+    transform: 1;
+  }
+}
+@keyframes rubberband {
+  0% {
+    -webkit-transform: scaleX(1);
+    -moz-transform: scaleX(1);
+    -ms-transform: scaleX(1);
+    -o-transform: scaleX(1);
+    transform: scaleX(1);
+    opacity: 0;
+  }
+  20% {
+    -webkit-transform: scaleX(1.4);
+    -moz-transform: scaleX(1.4);
+    -ms-transform: scaleX(1.4);
+    -o-transform: scaleX(1.4);
+    transform: scaleX(1.4);
+  }
+  43% {
+    -webkit-transform: scaleX(0.81);
+    -moz-transform: scaleX(0.81);
+    -ms-transform: scaleX(0.81);
+    -o-transform: scaleX(0.81);
+    transform: scaleX(0.81);
+    opacity: 1;
+  }
+  57% {
+    -webkit-transform: scaleX(1.2);
+    -moz-transform: scaleX(1.2);
+    -ms-transform: scaleX(1.2);
+    -o-transform: scaleX(1.2);
+    transform: scaleX(1.2);
+  }
+  69% {
+    -webkit-transform: scaleX(0.89);
+    -moz-transform: scaleX(0.89);
+    -ms-transform: scaleX(0.89);
+    -o-transform: scaleX(0.89);
+    transform: scaleX(0.89);
+  }
+  77% {
+    -webkit-transform: scaleX(1.1);
+    -moz-transform: scaleX(1.1);
+    -ms-transform: scaleX(1.1);
+    -o-transform: scaleX(1.1);
+    transform: scaleX(1.1);
+  }
+  89% {
+    -webkit-transform: scaleX(0.91);
+    -moz-transform: scaleX(0.91);
+    -ms-transform: scaleX(0.91);
+    -o-transform: scaleX(0.91);
+    transform: scaleX(0.91);
+  }
+  100% {
+    -webkit-transform: 1;
+    -moz-transform: 1;
+    -ms-transform: 1;
+    -o-transform: 1;
+    transform: 1;
+  }
+}
+.rubberband {
+  -webkit-animation: rubberband 1s linear forwards;
+  -moz-animation: rubberband 1s linear forwards;
+  -ms-animation: rubberband 1s linear forwards;
+  -o-animation: rubberband 1s linear forwards;
+  animation: rubberband 1s linear forwards;
+}
+
 .expand-bounce-right {
   -webkit-animation: expandBounceX 1s linear forwards;
   -moz-animation: expandBounceX 1s linear forwards;
@@ -3425,7 +3673,7 @@ body .overlay {
   background: firebrick;
 }
 body section {
-  display: none;
+  margin-top: 25px;
 }
 body .square {
   width: 200px;
@@ -3498,7 +3746,7 @@ body button {
   margin-bottom: 40px;
   margin-left: auto;
   margin-right: auto;
-  width: 150px;
+  width: 200px;
   cursor: pointer;
   border-radius: 5px;
   color: white;
@@ -3512,6 +3760,7 @@ body button {
 body button:active {
   outline: 0;
   box-shadow: none;
+  margin-top: 3px;
 }
 body button:focus {
   outline: 0;
