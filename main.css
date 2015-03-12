@@ -3358,132 +3358,67 @@ html {
     transform: 1;
   }
 }
-.rubberband {
-  -webkit-animation: rubberband 1s linear forwards;
-  -moz-animation: rubberband 1s linear forwards;
-  -ms-animation: rubberband 1s linear forwards;
-  -o-animation: rubberband 1s linear forwards;
-  animation: rubberband 1s linear forwards;
+.fade-in {
+  -webkit-animation-name: fadeIn;
+  -moz-animation-name: fadeIn;
+  -ms-animation-name: fadeIn;
+  -o-animation-name: fadeIn;
+  animation-name: fadeIn;
+  -webkit-animation-duration: 1s;
+  -moz-animation-duration: 1s;
+  -ms-animation-duration: 1s;
+  -o-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-timing-function: linear;
+  -moz-animation-timing-function: linear;
+  -ms-animation-timing-function: linear;
+  -o-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  -ms-animation-fill-mode: forwards;
+  -o-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
 }
 
-.expand-bounce-right {
-  -webkit-animation: expandBounceX 1s linear forwards;
-  -moz-animation: expandBounceX 1s linear forwards;
-  -ms-animation: expandBounceX 1s linear forwards;
-  -o-animation: expandBounceX 1s linear forwards;
-  animation: expandBounceX 1s linear forwards;
-  -webkit-transform-origin: left center;
-  -moz-transform-origin: left center;
-  -ms-transform-origin: left center;
-  -o-transform-origin: left center;
-  transform-origin: left center;
+.fade-in-scale-bounce {
+  -webkit-animation: fadeInScaleBounce 1s ease-out forwards;
+  -moz-animation: fadeInScaleBounce 1s ease-out forwards;
+  -ms-animation: fadeInScaleBounce 1s ease-out forwards;
+  -o-animation: fadeInScaleBounce 1s ease-out forwards;
+  animation: fadeInScaleBounce 1s ease-out forwards;
 }
 
-.expand-bounce-left {
-  -webkit-animation: expandBounceX 1s linear forwards;
-  -moz-animation: expandBounceX 1s linear forwards;
-  -ms-animation: expandBounceX 1s linear forwards;
-  -o-animation: expandBounceX 1s linear forwards;
-  animation: expandBounceX 1s linear forwards;
-  -webkit-transform-origin: right center;
-  -moz-transform-origin: right center;
-  -ms-transform-origin: right center;
-  -o-transform-origin: right center;
-  transform-origin: right center;
+.fade-in-down {
+  -webkit-animation: fadeInDown 1s linear forwards;
+  -moz-animation: fadeInDown 1s linear forwards;
+  -ms-animation: fadeInDown 1s linear forwards;
+  -o-animation: fadeInDown 1s linear forwards;
+  animation: fadeInDown 1s linear forwards;
 }
 
-.expand-right {
-  -webkit-animation: expandX 1s linear forwards;
-  -moz-animation: expandX 1s linear forwards;
-  -ms-animation: expandX 1s linear forwards;
-  -o-animation: expandX 1s linear forwards;
-  animation: expandX 1s linear forwards;
-  -webkit-transform-origin: left center;
-  -moz-transform-origin: left center;
-  -ms-transform-origin: left center;
-  -o-transform-origin: left center;
-  transform-origin: left center;
+.fade-in-up {
+  -webkit-animation: fadeInUp 1s linear forwards;
+  -moz-animation: fadeInUp 1s linear forwards;
+  -ms-animation: fadeInUp 1s linear forwards;
+  -o-animation: fadeInUp 1s linear forwards;
+  animation: fadeInUp 1s linear forwards;
 }
 
-.expand-left {
-  -webkit-animation: expandX 1s linear forwards;
-  -moz-animation: expandX 1s linear forwards;
-  -ms-animation: expandX 1s linear forwards;
-  -o-animation: expandX 1s linear forwards;
-  animation: expandX 1s linear forwards;
-  -webkit-transform-origin: right center;
-  -moz-transform-origin: right center;
-  -ms-transform-origin: right center;
-  -o-transform-origin: right center;
-  transform-origin: right center;
+.fade-in-left {
+  -webkit-animation: fadeInLeft 1s linear forwards;
+  -moz-animation: fadeInLeft 1s linear forwards;
+  -ms-animation: fadeInLeft 1s linear forwards;
+  -o-animation: fadeInLeft 1s linear forwards;
+  animation: fadeInLeft 1s linear forwards;
 }
 
-.expand-top {
-  -webkit-animation: expandY 1s linear forwards;
-  -moz-animation: expandY 1s linear forwards;
-  -ms-animation: expandY 1s linear forwards;
-  -o-animation: expandY 1s linear forwards;
-  animation: expandY 1s linear forwards;
-  -webkit-transform-origin: bottom center;
-  -moz-transform-origin: bottom center;
-  -ms-transform-origin: bottom center;
-  -o-transform-origin: bottom center;
-  transform-origin: bottom center;
-}
-
-.expand-bounce-top {
-  -webkit-animation: expandBounceY 1s linear forwards;
-  -moz-animation: expandBounceY 1s linear forwards;
-  -ms-animation: expandBounceY 1s linear forwards;
-  -o-animation: expandBounceY 1s linear forwards;
-  animation: expandBounceY 1s linear forwards;
-  -webkit-transform-origin: bottom center;
-  -moz-transform-origin: bottom center;
-  -ms-transform-origin: bottom center;
-  -o-transform-origin: bottom center;
-  transform-origin: bottom center;
-}
-
-.expand-bounce-bottom {
-  -webkit-animation: expandBounceY 1s linear forwards;
-  -moz-animation: expandBounceY 1s linear forwards;
-  -ms-animation: expandBounceY 1s linear forwards;
-  -o-animation: expandBounceY 1s linear forwards;
-  animation: expandBounceY 1s linear forwards;
-  -webkit-transform-origin: top center;
-  -moz-transform-origin: top center;
-  -ms-transform-origin: top center;
-  -o-transform-origin: top center;
-  transform-origin: top center;
-}
-
-.expand-bottom {
-  -webkit-animation: expandY 1s linear forwards;
-  -moz-animation: expandY 1s linear forwards;
-  -ms-animation: expandY 1s linear forwards;
-  -o-animation: expandY 1s linear forwards;
-  animation: expandY 1s linear forwards;
-  -webkit-transform-origin: top center;
-  -moz-transform-origin: top center;
-  -ms-transform-origin: top center;
-  -o-transform-origin: top center;
-  transform-origin: top center;
-}
-
-.ghost-material {
-  -webkit-animation: ghostMaterial 1s linear forwards;
-  -moz-animation: ghostMaterial 1s linear forwards;
-  -ms-animation: ghostMaterial 1s linear forwards;
-  -o-animation: ghostMaterial 1s linear forwards;
-  animation: ghostMaterial 1s linear forwards;
-}
-
-.gravitate-y {
-  -webkit-animation: gravitateY 1s infinite linear;
-  -moz-animation: gravitateY 1s infinite linear;
-  -ms-animation: gravitateY 1s infinite linear;
-  -o-animation: gravitateY 1s infinite linear;
-  animation: gravitateY 1s infinite linear;
+.fade-in-right {
+  -webkit-animation: fadeInRight 1s linear forwards;
+  -moz-animation: fadeInRight 1s linear forwards;
+  -ms-animation: fadeInRight 1s linear forwards;
+  -o-animation: fadeInRight 1s linear forwards;
+  animation: fadeInRight 1s linear forwards;
 }
 
 .fade-out {
@@ -3566,52 +3501,140 @@ html {
   animation: bounceInRight 1s ease-in-out forwards;
 }
 
+.expand-top {
+  -webkit-animation: expandY 1s linear forwards;
+  -moz-animation: expandY 1s linear forwards;
+  -ms-animation: expandY 1s linear forwards;
+  -o-animation: expandY 1s linear forwards;
+  animation: expandY 1s linear forwards;
+  -webkit-transform-origin: bottom center;
+  -moz-transform-origin: bottom center;
+  -ms-transform-origin: bottom center;
+  -o-transform-origin: bottom center;
+  transform-origin: bottom center;
+}
+
+.expand-right {
+  -webkit-animation: expandX 1s linear forwards;
+  -moz-animation: expandX 1s linear forwards;
+  -ms-animation: expandX 1s linear forwards;
+  -o-animation: expandX 1s linear forwards;
+  animation: expandX 1s linear forwards;
+  -webkit-transform-origin: left center;
+  -moz-transform-origin: left center;
+  -ms-transform-origin: left center;
+  -o-transform-origin: left center;
+  transform-origin: left center;
+}
+
+.expand-left {
+  -webkit-animation: expandX 1s linear forwards;
+  -moz-animation: expandX 1s linear forwards;
+  -ms-animation: expandX 1s linear forwards;
+  -o-animation: expandX 1s linear forwards;
+  animation: expandX 1s linear forwards;
+  -webkit-transform-origin: right center;
+  -moz-transform-origin: right center;
+  -ms-transform-origin: right center;
+  -o-transform-origin: right center;
+  transform-origin: right center;
+}
+
+.expand-bottom {
+  -webkit-animation: expandY 1s linear forwards;
+  -moz-animation: expandY 1s linear forwards;
+  -ms-animation: expandY 1s linear forwards;
+  -o-animation: expandY 1s linear forwards;
+  animation: expandY 1s linear forwards;
+  -webkit-transform-origin: top center;
+  -moz-transform-origin: top center;
+  -ms-transform-origin: top center;
+  -o-transform-origin: top center;
+  transform-origin: top center;
+}
+
+.expand-bounce-top {
+  -webkit-animation: expandBounceY 1s linear forwards;
+  -moz-animation: expandBounceY 1s linear forwards;
+  -ms-animation: expandBounceY 1s linear forwards;
+  -o-animation: expandBounceY 1s linear forwards;
+  animation: expandBounceY 1s linear forwards;
+  -webkit-transform-origin: bottom center;
+  -moz-transform-origin: bottom center;
+  -ms-transform-origin: bottom center;
+  -o-transform-origin: bottom center;
+  transform-origin: bottom center;
+}
+
+.expand-bounce-bottom {
+  -webkit-animation: expandBounceY 1s linear forwards;
+  -moz-animation: expandBounceY 1s linear forwards;
+  -ms-animation: expandBounceY 1s linear forwards;
+  -o-animation: expandBounceY 1s linear forwards;
+  animation: expandBounceY 1s linear forwards;
+  -webkit-transform-origin: top center;
+  -moz-transform-origin: top center;
+  -ms-transform-origin: top center;
+  -o-transform-origin: top center;
+  transform-origin: top center;
+}
+
+.expand-bounce-right {
+  -webkit-animation: expandBounceX 1s linear forwards;
+  -moz-animation: expandBounceX 1s linear forwards;
+  -ms-animation: expandBounceX 1s linear forwards;
+  -o-animation: expandBounceX 1s linear forwards;
+  animation: expandBounceX 1s linear forwards;
+  -webkit-transform-origin: left center;
+  -moz-transform-origin: left center;
+  -ms-transform-origin: left center;
+  -o-transform-origin: left center;
+  transform-origin: left center;
+}
+
+.expand-bounce-left {
+  -webkit-animation: expandBounceX 1s linear forwards;
+  -moz-animation: expandBounceX 1s linear forwards;
+  -ms-animation: expandBounceX 1s linear forwards;
+  -o-animation: expandBounceX 1s linear forwards;
+  animation: expandBounceX 1s linear forwards;
+  -webkit-transform-origin: right center;
+  -moz-transform-origin: right center;
+  -ms-transform-origin: right center;
+  -o-transform-origin: right center;
+  transform-origin: right center;
+}
+
+.rubberband {
+  -webkit-animation: rubberband 1s linear forwards;
+  -moz-animation: rubberband 1s linear forwards;
+  -ms-animation: rubberband 1s linear forwards;
+  -o-animation: rubberband 1s linear forwards;
+  animation: rubberband 1s linear forwards;
+}
+
+.ghost-material {
+  -webkit-animation: ghostMaterial 1s linear forwards;
+  -moz-animation: ghostMaterial 1s linear forwards;
+  -ms-animation: ghostMaterial 1s linear forwards;
+  -o-animation: ghostMaterial 1s linear forwards;
+  animation: ghostMaterial 1s linear forwards;
+}
+
+.gravitate-y {
+  -webkit-animation: gravitateY 1s infinite linear;
+  -moz-animation: gravitateY 1s infinite linear;
+  -ms-animation: gravitateY 1s infinite linear;
+  -o-animation: gravitateY 1s infinite linear;
+  animation: gravitateY 1s infinite linear;
+}
+
 .flip-top {
   -webkit-animation: flipTop 1s ease-out forwards;
   -moz-animation: flipTop 1s ease-out forwards;
   -ms-animation: flipTop 1s ease-out forwards;
   -o-animation: flipTop 1s ease-out forwards;
   animation: flipTop 1s ease-out forwards;
-}
-
-.fade-in {
-  -webkit-animation: fadeIn 1s linear forwards;
-  -moz-animation: fadeIn 1s linear forwards;
-  -ms-animation: fadeIn 1s linear forwards;
-  -o-animation: fadeIn 1s linear forwards;
-  animation: fadeIn 1s linear forwards;
-}
-
-.fade-in-down {
-  -webkit-animation: fadeInDown 1s linear forwards;
-  -moz-animation: fadeInDown 1s linear forwards;
-  -ms-animation: fadeInDown 1s linear forwards;
-  -o-animation: fadeInDown 1s linear forwards;
-  animation: fadeInDown 1s linear forwards;
-}
-
-.fade-in-up {
-  -webkit-animation: fadeInUp 1s linear forwards;
-  -moz-animation: fadeInUp 1s linear forwards;
-  -ms-animation: fadeInUp 1s linear forwards;
-  -o-animation: fadeInUp 1s linear forwards;
-  animation: fadeInUp 1s linear forwards;
-}
-
-.fade-in-left {
-  -webkit-animation: fadeInLeft 1s linear forwards;
-  -moz-animation: fadeInLeft 1s linear forwards;
-  -ms-animation: fadeInLeft 1s linear forwards;
-  -o-animation: fadeInLeft 1s linear forwards;
-  animation: fadeInLeft 1s linear forwards;
-}
-
-.fade-in-right {
-  -webkit-animation: fadeInRight 1s linear forwards;
-  -moz-animation: fadeInRight 1s linear forwards;
-  -ms-animation: fadeInRight 1s linear forwards;
-  -o-animation: fadeInRight 1s linear forwards;
-  animation: fadeInRight 1s linear forwards;
 }
 
 .shake {
@@ -3628,14 +3651,6 @@ html {
   -ms-animation: pulseScale 1s ease-out forwards;
   -o-animation: pulseScale 1s ease-out forwards;
   animation: pulseScale 1s ease-out forwards;
-}
-
-.fade-in-scale-bounce {
-  -webkit-animation: fadeInScaleBounce 1s ease-out forwards;
-  -moz-animation: fadeInScaleBounce 1s ease-out forwards;
-  -ms-animation: fadeInScaleBounce 1s ease-out forwards;
-  -o-animation: fadeInScaleBounce 1s ease-out forwards;
-  animation: fadeInScaleBounce 1s ease-out forwards;
 }
 
 .spin-clockwise {
