@@ -8,129 +8,52 @@
 </head>
 <body>
 
-   <button class='subscribe'>Subscribe</button>
+   <nav id='nav'>
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Work</a>
+      <a href="#">Contact</a>
+   </nav>
+
+   <h1>Text Cool</h1>
 
    <div class="square">
       <img src="img/skoff-logo-colour.png" alt="">
    </div>
 
-   <div class="overlay"></div>
-
-   <h1 class="title">Karim Cheurfi</h1>
-
    <div class="square-container">
       <div class="fill"></div>
    </div>
 
-   <section class="general">
-      <h1>General animations</h1>
-      <div class="square2"></div>
-      <div class="belt">
-         <button id='bounce-general'>Bounce</button>
-         <button id="fade-in-general">Fade In</button>
-         <button id='pulse'>Scale pulse</button> <!-- scale pulse -->
-         <button id='shake'>Shake</button>
-         <button id='flip-in-x'>Flip-in X</button>
-         <button id='flip-in-y'>Flip-in Y</button>
-         <button id='spin'>Spin</button>
-         <button id="rotate-fade-in">Rotate fade in</button>
-      </div>
-   </section>
-
-   <section class="fade">
-      <h1>Fading animations</h1>
-      <div class="square2"></div>
-      <div class="belt">
-         <button id='fade-in'>Fade In</button>
-         <button id='fade-in-up'>Fade In Up</button>
-         <button id='fade-in-right'>Fade In Right</button>
-         <button id='fade-in-down'>Fade In Down</button>
-         <button id='fade-in-left'>Fade In Left</button>
-         <button id='fade-in-left'>Fade In bounce</button>
-      </div>
-   </section>
-
-
-   <section class="bounce">
-      <h1>Bouncing animations</h1>
-      <div class="square2"></div>
-      <div class="belt">
-         <button id='bounce-in'>Bounce In</button>
-         <button id='bounce-in-up'>Bounce In Up</button>
-         <button id='bounce-in-right'>Bounce In Right</button>
-         <button id='bounce-in-down'>Bounce In Down</button>
-         <button id='bounce-in-left'>Bounce In Left</button>
-      </div>
-   </section>
-
-   <section class="fade-out">
-      <h1>Fade-out animations</h1>
-      <div class="square2"></div>
-      <div class="belt">
-         <button id="fade-out">Fade Out</button>
-         <button id="fade-out-up">Fade Out Up</button>
-         <button id="fade-out-down">Fade Out Down</button>
-         <button id="fade-out-left">Fade Out Left</button>
-         <button id="fade-out-right">Fade Out Right</button>
-         <button id="fade-out-scale">Fade Out Scale</button>
-      </div>
-   </section>
-
-   <section class="other-2">
-      <h1>Other Cool Animations</h1>
-      <div class="square2"></div>
-      <div class="belt">
-         <button id="float">Float</button>
-         <button id="toss">Toss</button>
-         <button id="stretch-right">Stretch Right</button>
-         <button id="strech-left">Stretch Left</button>
-         <button id="stretch-up">Stretch Up</button>
-         <button id="stretch-down">Stretch Down</button>
-         <button id="bounce-stretch-right">Bounce Stretch Right</button>
-         <button id="bounce-stretch-left">Bounce Stretch Left</button>
-         <button id="bounce-stretch-up">Bounce Stretch Up</button>
-         <button id="bounce-stretch-down">Bounce Stretch Down</button>
-         <button id="sticky-up">Sticky Up</button>
-         <button id="sticky-down">Sticky Down</button>
-         <button id="blur">Blur</button>
-         <button id="just-me">Just Me</button>
-      </div>
-   </section>
-
    <script>
 
-      // button
-      var theBtn = document.querySelector('.subscribe');
+      // target the nav
+      var theNav = document.getElementById('nav');
+      var theLinks = theNav.querySelectorAll('a');
+      var heading = document.querySelector('h1');
 
-      theBtn.classList.add('fade-in');
-      theBtn.style.webkitAnimationTimingFunction = 'ease-out';
-      theBtn.style.webkitAnimationDuration = '1s';
-      theBtn.style.webkitAnimationFillMode = 'forwards';
+      heading.addEventListener('click', function(){
 
-      // make elements appear on scroll
+         this.classList.toggle('wobble');
+         this.style.webkitAnimationDuration = '.45s'
+         this.style.webkitAnimationFillMode = 'both';
+      }, false);
 
-      window.addEventListener('scroll', function(){
+      theNav.addEventListener('click', function(){
 
-         var scrollTop = this.pageYOffset;
-         var sections = document.querySelectorAll('section');
+         for (var i = 0; i < theLinks.length; i++ ) {
 
-
-         for ( var i = 0; i < sections.length; i++ ){
-
-            var element = sections[i];
-            var square = element.querySelector('.square2');
-
-
-            if ( scrollTop < element.offsetTop + 400) {
-
-               square.classList.add('rubberband');
-               console.log(square.getAttribute('class'));
-
-            }
+            var link = theLinks[i];
+            link.style.color = 'mediumseagreen';
+            link.classList.toggle('fade-in-right');
+            link.style.webkitAnimationDuration = '.45s'
+            link.style.webkitAnimationFillMode = 'both';
 
          }
 
       }, false);
+
+
 
    </script>
 </body>
