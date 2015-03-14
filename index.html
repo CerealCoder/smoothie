@@ -25,33 +25,70 @@
       <div class="fill"></div>
    </div>
 
+
+   <div class="square-2"></div>
+   <div class="square-2"></div>
+   <div class="square-2"></div>
+   <div class="square-2"></div>
+   <div class="square-2"></div>
+
    <script>
 
       // target the nav
       var theNav = document.getElementById('nav');
       var theLinks = theNav.querySelectorAll('a');
       var heading = document.querySelector('h1');
+      var firstLink = theNav.firstElementChild;
 
       heading.addEventListener('click', function(){
 
          this.classList.toggle('wobble');
-         this.style.webkitAnimationDuration = '.45s'
+         this.style.webkitAnimationDuration = '.65s'
          this.style.webkitAnimationFillMode = 'both';
       }, false);
 
-      theNav.addEventListener('click', function(){
+      theNav.addEventListener('', function(){
 
          for (var i = 0; i < theLinks.length; i++ ) {
 
             var link = theLinks[i];
             link.style.color = 'mediumseagreen';
-            link.classList.toggle('fade-in-right');
-            link.style.webkitAnimationDuration = '.45s'
+            link.classList.toggle('bounce-in-scale');
+            link.style.webkitAnimationDuration = '.75s';
             link.style.webkitAnimationFillMode = 'both';
 
          }
 
       }, false);
+
+      firstLink.addEventListener('mouseenter', function(){
+
+         this.classList.toggle('wobble');
+         this.style.color = 'firebrick';
+         this.style.webkitAnimationDuration = '.65s';
+         this.style.webkitAnimationFillMode = 'both';
+
+      }, false);
+
+      // select all the divs and put them in an array
+      var theSquares = Array.prototype.slice.call(document.querySelectorAll('.square-2'));
+
+      window.addEventListener('scroll', function(){
+
+         theSquares.forEach(function(square, index, theSquares){
+
+            var imgPos = square.offsetTop;
+            var topOfWindow = window.pageYOffset;
+
+            if (imgPos < topOfWindow + 240) {
+               square.classList.add('wobble');
+            }
+
+         });
+
+
+      }, false);
+
 
 
 

@@ -22,7 +22,6 @@ body
          text-decoration: none
          font-size: 19px
          margin-right: 10px
-         opacity: 0
 
          &:last-child
             margin-right: 0
@@ -43,7 +42,7 @@ body
 
             &:nth-child(#{$i})
 
-               +animation-delay(0.3s * $i)
+               // +animation-delay(1s * $i)
 
    h1
       text-align: center
@@ -80,3 +79,10 @@ body
       .fill
          +size(100%)
          background: lemonchiffon
+
+   .square-2
+      +size(400px)
+      margin-bottom: 50px
+      background: firebrick
+      margin-left: auto
+      margin-right: auto
