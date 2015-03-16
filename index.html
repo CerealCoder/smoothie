@@ -42,7 +42,7 @@
 
       heading.addEventListener('click', function(){
 
-         this.classList.toggle('wobble');
+         this.classList.toggle('vanish-in');
          this.style.webkitAnimationDuration = '.65s'
          this.style.webkitAnimationFillMode = 'both';
       }, false);
@@ -63,10 +63,10 @@
 
       firstLink.addEventListener('mouseenter', function(){
 
-         this.classList.toggle('wobble');
+         this.classList.toggle('vanish-out');
          this.style.color = 'firebrick';
          this.style.webkitAnimationDuration = '.65s';
-         this.style.webkitAnimationFillMode = 'both';
+         this.style.webkitAnimationFillMode = 'forwards';
 
       }, false);
 
@@ -86,11 +86,7 @@
 
          });
 
-
       }, false);
-
-
-
 
    </script>
 </body>

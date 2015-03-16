@@ -455,11 +455,12 @@
 
 // Ghost Material Button
 
-+keyframes(ghostMaterial)
++keyframes(vanishIn)
 
    0%
       opacity: 0
       +transform(scale(2))
+      +filter(blur(30px))
 
    50%
 
@@ -468,6 +469,24 @@
    100%
       opacity: 1
       +transform(scale(1))
+      +filter(blur(0))
+
+// Ghost Material Button
+
++keyframes(vanishOut)
+
+   0%
+      opacity: 1
+      +transform(scale(1))
+      +filter(blur(0))
+
+   50%
+      opacity: .5
+
+   100%
+      +transform(scale(2))
+      +filter(blur(30px))
+      opacity: 0
 
 // EXPAND X
 
@@ -488,20 +507,14 @@
 
    0%
       +transform(scaleX(0))
-
    30%
       +transform(scaleX(1))
-
    53%
-
       +transform(scaleX(0.91))
-
    64%
       +transform(scaleX(1))
-
    87%
       +transform(scaleX(0.96))
-
    100%
       +transform(scaleX(1))
 
@@ -522,26 +535,20 @@
 
    0%
       +transform(scaleY(0))
-
    30%
       +transform(scaleY(1))
-
    53%
-
       +transform(scaleY(0.91))
-
    64%
       +transform(scaleY(1))
-
    87%
       +transform(scaleY(0.96))
-
    100%
       +transform(scaleY(1))
 
 // Rubberband
 
-+keyframes(rubberband)
++keyframes(elastico)
 
    0%
       +transform(scaleX(1))
@@ -568,7 +575,6 @@
 
    0%
       +transform(scale3d(1,1,1))
-
    20%
       +transform(scale3d(1.6,1.4,1.6))
    43%
@@ -584,6 +590,15 @@
    100%
       +transform(scale3d(1,1,1))
 
+// Rotate Fade In Left
+// +keyframes(rotateFadeInLeft)
+//
+//    0%
+//
+//    50%
+//
+//    100%
+//
 // **** CSS CLASSES **** //
 
 .fade-in
@@ -670,14 +685,17 @@
    +animation('expandBounceX 1s linear forwards')
    +transform-origin(right center)
 
-.rubberband
-   +animation('rubberband 1s linear forwards')
+.elastico
+   +animation('elastico 1s linear forwards')
 
 .wobble
    +animation('wobble 1s linear both')
 
-.ghost-material
-   +animation('ghostMaterial 1s linear forwards')
+.vanish-in
+   +animation('vanishIn 1s ease-out forwards')
+
+.vanish-out
+   +animation('vanishOut 1s ease-out forwards')
 
 .gravitate-y
    +animation('gravitateY 1s infinite linear')
