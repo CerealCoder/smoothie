@@ -4033,6 +4033,19 @@ html {
   animation: spin 1s infinite reverse linear;
 }
 
+.rotate-fade-in-left {
+  -webkit-animation: rotateFadeInLeft 1s linear forwards;
+  -moz-animation: rotateFadeInLeft 1s linear forwards;
+  -ms-animation: rotateFadeInLeft 1s linear forwards;
+  -o-animation: rotateFadeInLeft 1s linear forwards;
+  animation: rotateFadeInLeft 1s linear forwards;
+  -webkit-transform-origin: left center;
+  -moz-transform-origin: left center;
+  -ms-transform-origin: left center;
+  -o-transform-origin: left center;
+  transform-origin: left center;
+}
+
 html {
   position: relative;
 }

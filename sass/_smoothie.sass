@@ -590,15 +590,6 @@
    100%
       +transform(scale3d(1,1,1))
 
-// Rotate Fade In Left
-// +keyframes(rotateFadeInLeft)
-//
-//    0%
-//
-//    50%
-//
-//    100%
-//
 // **** CSS CLASSES **** //
 
 .fade-in
@@ -610,107 +601,145 @@
 
 .fade-in-scale-bounce
    +animation('fadeInScaleBounce 1s ease-out forwards')
+   visibility: visible !important
 
 .fade-in-down
    +animation('fadeInDown 1s linear forwards')
+   visibility: visible !important
 
 .fade-in-up
    +animation('fadeInUp 1s linear forwards')
+   visibility: visible !important
 
 .fade-in-left
    +animation('fadeInLeft 1s linear forwards')
+   visibility: visible !important
 
 .fade-in-right
    +animation('fadeInRight 1s linear forwards')
+   visibility: visible !important
 
 .fade-out
    +animation('fadeOut 1s linear forwards')
+   visibility: visible !important
 
 .fade-out-down
    +animation('fadeOutDown 1s linear forwards')
+   visibility: visible !important
 
 .fade-out-left
    +animation('fadeOutLeft 1s linear forwards')
+   visibility: visible !important
 
 .fade-out-right
    +animation('fadeOutRight 1s linear forwards')
+   visibility: visible !important
 
 .fade-out-up
    +animation('fadeOutUp 1s linear forwards')
+   visibility: visible !important
 
 .bounce-in-scale
    +animation('bounceInScale 1s ease-out forwards')
+   visibility: visible !important
 
 .bounce-in-down
    +animation('bounceInDown 1s ease-out both')
+   visibility: visible !important
 
 .bounce-in-up
    +animation('bounceInUp 1s linear both')
+   visibility: visible !important
 
 .bounce-in-left
    +animation('bounceInLeft 1s ease-in-out forwards')
+   visibility: visible !important
 
 .bounce-in-right
    +animation('bounceInRight 1s ease-in-out forwards')
+   visibility: visible !important
 
 .expand-top
    +animation('expandY 1s linear forwards')
    +transform-origin(bottom center)
+   visibility: visible !important
 
 .expand-right
    +animation('expandX 1s linear forwards')
    +transform-origin(left center)
+   visibility: visible !important
 
 .expand-left
    +animation('expandX 1s linear forwards')
    +transform-origin(right center)
+   visibility: visible !important
 
 .expand-bottom
    +animation('expandY 1s linear forwards')
    +transform-origin(top center)
+   visibility: visible !important
 
 .expand-bounce-top
    +animation('expandBounceY 1s linear forwards')
    +transform-origin(bottom center)
+   visibility: visible !important
 
 .expand-bounce-bottom
    +animation('expandBounceY 1s linear forwards')
    +transform-origin(top center)
+   visibility: visible !important
 
 .expand-bounce-right
    +animation('expandBounceX 1s linear forwards')
    +transform-origin(left center)
+   visibility: visible !important
 
 .expand-bounce-left
    +animation('expandBounceX 1s linear forwards')
    +transform-origin(right center)
+   visibility: visible !important
 
 .elastico
    +animation('elastico 1s linear forwards')
+   visibility: visible !important
 
 .wobble
    +animation('wobble 1s linear both')
+   visibility: visible !important
 
 .vanish-in
    +animation('vanishIn 1s ease-out forwards')
+   visibility: visible !important
 
 .vanish-out
    +animation('vanishOut 1s ease-out forwards')
+   visibility: visible !important
 
 .gravitate-y
    +animation('gravitateY 1s infinite linear')
+   visibility: visible !important
 
 .flip-top
    +animation('flipTop 1s ease-out forwards')
+   visibility: visible !important
 
 .shake
    +animation('shake 1s ease-out forwards')
+   visibility: visible !important
 
 .pulse-scale
    +animation('pulseScale 1s ease-out forwards')
+   visibility: visible !important
 
 .spin-clockwise
    +animation('spin 1s infinite linear')
+   visibility: visible !important
 
 .spin-reverse
    +animation('spin 1s infinite reverse linear')
+   visibility: visible !important
+
+.rotate-fade-in-left
+   +animation('rotateFadeInLeft 1s linear forwards')
+   +transform-origin(left center)
+   visibility: visible !important
