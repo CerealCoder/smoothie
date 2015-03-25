@@ -1,5 +1,6 @@
 var gulp = require('gulp');
 var sass = require('gulp-ruby-sass');
+var prefix = require('gulp-autoprefixer');
 var browserSync = require('browser-sync');
 var reload = browserSync.reload;
 
@@ -35,6 +36,12 @@ gulp.task('sass', function(){
       .on('error', function(err) {
          console.error('Error!', err.message);
       })
+      .pipe(prefix({
+
+         browsers: ['last 2 versions', '> 1%', 'ie 8', 'ie 7'],
+         cascade: true,
+         remove: true
+      }))
       .pipe(gulp.dest('./'))
       .pipe(reload({stream: true}));
 

@@ -90,15 +90,15 @@
 
    0%
       opacity: 0
-      +transform(scale3d(0))
+      transform: scale3d(0)
 
    50%
       opacity: 0.5
-      +transform(scale3d(0.6,0.6,1))
+      transform: scale3d(0.6,0.6,1)
 
    100%
       opacity: 1
-      +transform(scale3d(1,1,1))
+      transform: scale3d(1,1,1)
 
 .fade-in
    // +animation('fadeIn 1s linear forwards')
@@ -112,14 +112,14 @@
 +keyframes(fadeInDown)
 
    0%
-      +transform(translate3d(0,-30px,0))
+      transform: translate3d(0,-30px,0)
       opacity: 0
 
    50%
       opacity: 0.5
 
    100%
-      +transform(translate3d(0))
+      transform: translate3d(0)
       opacity: 1
 
 .fade-in-down
@@ -131,14 +131,14 @@
 +keyframes(fadeInLeft)
 
    0%
-      +transform(translate3d(-30px,0,0))
+      transform: translate3d(-30px,0,0)
       opacity: 0
 
    50%
       opacity: 0.5
 
    100%
-      +transform(translate3d(0))
+      transform: translate3d(0)
       opacity: 1
 
 .fade-in-left
@@ -151,14 +151,14 @@
 +keyframes(fadeInRight)
 
    0%
-      +transform(translate3d(30px,0,0))
+      transform: translate3d(30px,0,0)
       opacity: 0
 
    50%
       opacity: 0.5
 
    100%
-      +transform(translate3d(0))
+      transform: translate3d(0)
       opacity: 1
 
 .fade-in-right
@@ -171,7 +171,7 @@
 +keyframes(fadeInUp)
 
    0%
-      +transform(translate3d(0,30px,0))
+      transform: translate3d(0,30px,0)
       opacity: 0
 
    50%
@@ -180,7 +180,7 @@
 
    100%
 
-      +transform(translate3d(0))
+      transform: translate3d(0)
 
 .fade-in-up
    +animation('fadeInUp 1s linear forwards')
@@ -192,13 +192,13 @@
 +keyframes(shake)
 
    0%, 100%
-      +transform(translate3d(0))
+      transform: translate3d(0)
 
    15%, 45%, 75%
-      +transform(translate3d(20px,0,0))
+      transform: translate3d(20px,0,0)
 
    30%, 60%
-      +transform(translate3d(-20px,0,0))
+      transform: translate3d(-20px,0,0)
 
 .shake
    +animation('shake 1s ease-out forwards')
@@ -211,11 +211,11 @@
 
    0%, 100%
       opacity: 0.6
-      +transform(scale3d(1,1,1))
+      transform: scale3d(1,1,1)
 
    50%
       opacity: 1
-      +transform(scale3d(1.2,1.2,1.2))
+      transform: scale3d(1.2,1.2,1.2)
 
 .pulse-scale
    +animation('pulseScale 1s ease-out forwards')
@@ -228,18 +228,17 @@
 
    0%
       opacity: 0
-      +transform(scale3d(1,1,1))
+      transform: scale3d(1,1,1)
    40%
-      +transform(scale3d(1.2,1.2,1.2))
+      transform: scale3d(1.2,1.2,1.2)
    60%
-      +transform(scale3d(0.85,0.85,1))
+      transform: scale3d(0.85,0.85,1)
 
    80%
-      +transform(scale3d(1.04,1.04,1.04))
-
+      transform: scale3d(1.04,1.04,1.04)
    100%
       opacity: 1
-      +transform(scale(1))
+      transform: scale(1)
 
 .fade-in-scale-bounce
    +animation('fadeInScaleBounce 1s ease-out forwards')
@@ -250,29 +249,29 @@
 +keyframes(flipTop)
 
    0%
-      +transform(perspective(400deg))
-      +transform(rotate3d(1,0,0, 90deg))
+      transform: perspective(400deg)
+      transform: rotate3d(1,0,0, 90deg)
       opacity: 0
 
    40%
 
-      +transform(perspective(400deg))
-      +transform(rotate3d(1,0,0, -30deg))
+      transform: perspective(400deg)
+      transform: rotate3d(1,0,0, -30deg)
 
 
    60%
 
-      +transform(perspective(400deg))
-      +transform(rotate3d(1,0,0, 15deg))
+      transform: perspective(400deg)
+      transform: rotate3d(1,0,0, 15deg)
       opacity: 1
 
    80%
-      +transform(perspective(400deg))
-      +transform(rotate3d(1,0,0, -10deg))
+      transform: perspective(400deg)
+      transform: rotate3d(1,0,0, -10deg)
 
    100%
 
-      +transform(perspective(400deg))
+      transform: perspective(400deg)
 
 .flip-top
    +animation('flipTop 1s ease-out forwards')
@@ -283,10 +282,10 @@
 +keyframes(spin)
 
    0%
-      +transform(rotate(0deg))
+      transform: rotate(0deg)
 
    100%
-      +transform(rotate(360deg))
+      transform: rotate(360deg)
 
 .spin-clockwise
    +animation('spin 1s infinite linear')
@@ -302,22 +301,22 @@
 +keyframes(bounceInDown)
 
    0%
-      +transform(translate3d(0,-700px,0))
+      transform: translate3d(0,-700px,0)
       opacity: 0
 
    30%, 100%
 
-      +transform(translate3d(0))
+      transform: translate3d(0)
       opacity: 1
 
    56%
-      +transform(translate3d(0, 20px, 0))
+      transform: translate3d(0, 20px, 0)
 
    73%
-      +transform(translate3d(0, -10px, 0))
+      transform: translate3d(0, -10px, 0)
 
    87%
-      +transform(translate3d(0, 5px, 0))
+      transform: translate3d(0, 5px,  0)
 
 .bounce-in-down
    +animation('bounceInDown 1s ease-out both')
@@ -328,27 +327,27 @@
 +keyframes(bounceInUp)
 
    0%
-      +transform(translate3d(0, 70px, 0))
+      transform: translate3d(0, 70px, 0)
       opacity: 0
 
    30%
 
-      +transform(translate3d(0))
+      transform: translate3d(0)
       opacity: 1
 
    56%
 
-      +transform(translate3d(0, -20px, 0))
+      transform: translate3d(0, -20px, 0)
 
    73%
 
-      +transform(translate3d(0, 10px, 0))
+      transform: translate3d(0, 10px, 0)
 
    87%
-      +transform(translate3d(0, -5px, 0))
+      transform: translate3d(0, -5px, 0)
 
    100%
-      +transform(translate3d(0))
+      transform: translate3d(0)
 
 .bounce-in-up
    +animation('bounceInUp 1s linear both')
@@ -360,21 +359,21 @@
 
    0%
       opacity: 0
-      +transform(translate3d(-70px, 0, 0))
+      transform: translate3d(-70px, 0, 0)
    30%
       opacity: 1
-      +transform(translate3d(20px, 0, 0))
+      transform: translate3d(20px, 0, 0)
    56%
-      +transform(translate3d(-12px, 0, 0))
+      transform: translate3d(-12px, 0, 0)
 
    73%
-      +transform(translate3d(8px, 0, 0))
+      transform: translate3d(8px, 0, 0)
 
    87%
-      +transform(translate3d(-3px, 0, 0))
+      transform: translate3d(-3px, 0, 0)
 
    100%
-      +transform(translate3d(0))
+      transform: translate3d(0)
 
 .bounce-in-left
    +animation('bounceInLeft 1s ease-in-out forwards')
@@ -386,21 +385,21 @@
 
    0%
       opacity: 0
-      +transform(translate3d(70px, 0, 0))
+      transform: translate3d(70px, 0, 0)
    30%
       opacity: 1
-      +transform(translate3d(-20px, 0, 0))
+      transform: translate3d(-20px, 0, 0)
    56%
-      +transform(translate3d(12px, 0, 0))
+      transform: translate3d(12px, 0, 0)
 
    73%
-      +transform(translate3d(-8px, 0, 0))
+      transform: translate3d(-8px, 0, 0)
 
    87%
-      +transform(translate3d(3px, 0, 0))
+      transform: translate3d(3px, 0, 0)
 
    100%
-      +transform(translate3d(0))
+      transform: translate3d(0)
 
 .bounce-in-right
    +animation('bounceInRight 1s ease-in-out forwards')
@@ -412,19 +411,19 @@
 
    0%
       opacity: 0
-      +transform(scale3d(0))
+      transform: scale3d(0)
    30%
 
-      +transform(scale3d(1.25, 1.25, 1))
+      transform: scale3d(1.25, 1.25, 1)
    56%
-      +transform(scale3d(0.75, 0.75, 1))
+      transform: scale3d(0.75, 0.75, 1)
       opacity: 1
    73%
-      +transform(scale3d(1.15, 1.15, 1))
+      transform: scale3d(1.15, 1.15, 1)
    87%
-      +transform(scale3d(0.87,0.87,1))
+      transform: scale3d(0.87,0.87,1)
    100%
-      +transform(scale3d(1,1,1))
+      transform: scale3d(1,1,1)
 
 .bounce-in-scale
    +animation('bounceInScale 1s ease-out forwards')
@@ -436,7 +435,7 @@
 
    0%
       opacity: 1
-      +transform(scale3d(1,1,1))
+      transform: scale3d(1,1,1)
 
    50%
 
@@ -445,7 +444,7 @@
    100%
 
       opacity: 0
-      +transform(scale(0))
+      transform: scale(0)
 
 .fade-out
    +animation('fadeOut 1s linear forwards')
@@ -458,14 +457,14 @@
 
    0%
       opacity: 1
-      +transform(translate3d(0))
+      transform: translate3d(0)
 
    50%
       opacity: .5
 
    100%
       opacity: 0
-      +transform(translate3d(0, -100%, 0))
+      transform: translate3d(0, -100%, 0)
 
 .fade-out-up
    +animation('fadeOutUp 1s linear forwards')
@@ -477,14 +476,14 @@
 
    0%
       opacity: 1
-      +transform(translate3d(0))
+      transform: translate3d(0)
 
    50%
       opacity: .5
 
    100%
       opacity: 0
-      +transform(translate3d(-100%, 0,0))
+      transform: translate3d(-100%, 0,0)
 
 .fade-out-left
    +animation('fadeOutLeft 1s linear forwards')
@@ -496,14 +495,14 @@
 
    0%
       opacity: 1
-      +transform(translate3d(0))
+      transform: translate3d(0)
 
    50%
       opacity: .5
 
    100%
       opacity: 0
-      +transform(translate3d(100%, 0, 0))
+      transform: translate3d(100%, 0, 0)
 
 .fade-out-right
    +animation('fadeOutRight 1s linear forwards')
@@ -515,14 +514,14 @@
 
    0%
       opacity: 1
-      +transform(translate3d(0))
+      transform: translate3d(0)
 
    50%
       opacity: .5
 
    100%
       opacity: 0
-      +transform(translate3d(0, 100%, 0))
+      transform: translate3d(0, 100%, 0)
 
 .fade-out-down
    +animation('fadeOutDown 1s linear forwards')
@@ -532,16 +531,16 @@
 +keyframes(gravitateY)
 
    0%
-      +transform(translate3d(0))
+      transform: translate3d(0)
 
    35%
-      +transform(translate3d(0, 20px, 0))
+      transform: translate3d(0, 20px, 0)
 
    75%
-      +transform(translate3d(0, -20px, 0))
+      transform: translate3d(0, -20px, 0)
 
    100%
-      +transform(translate3d(0))
+      transform: translate3d(0)
 
 .gravitate-y
    +animation('gravitateY 1s infinite linear')
@@ -554,8 +553,8 @@
 
    0%
       opacity: 0
-      +transform(scale3d(2,2,2))
-      +filter(blur(30px))
+      transform: scale3d(2,2,2)
+      filter: blur(30px)
 
    50%
 
@@ -563,8 +562,8 @@
 
    100%
       opacity: 1
-      +transform(scale3d(1,1,1))
-      +filter(blur(0))
+      transform: scale3d(1,1,1)
+      filter: blur(0)
 
 .vanish-in
    +animation('vanishIn 1s ease-out forwards')
@@ -576,15 +575,15 @@
 
    0%
       opacity: 1
-      +transform(scale3d(1,1,1))
-      +filter(blur(0))
+      transform: scale3d(1,1,1)
+      filter: blur(0)
 
    50%
       opacity: .5
 
    100%
-      +transform(scale3d(2,2,2))
-      +filter(blur(30px))
+      transform: scale3d(2,2,2)
+      filter: blur(30px)
       opacity: 0
 
 .vanish-out
@@ -597,13 +596,13 @@
 +keyframes(expandX)
 
    0%
-      +transform(scale3d(0,1,1))
+      transform: scale3d(0,1,1)
 
    50%
-      +transform(scale3d(0.5, 1, 1))
+      transform: scale3d(0.5, 1, 1)
 
    100%
-      +transform(scale3d(1,1,1))
+      transform: scale3d(1,1,1)
 
 .expand-left
    +animation('expandX 1s linear forwards')
@@ -620,17 +619,17 @@
 +keyframes(expandBounceX)
 
    0%
-      +transform(scale3d(0, 1, 1))
+      transform: scale3d(0, 1, 1)
    30%
-      +transform(scale3d(1,1,1))
+      transform: scale3d(1,1,1)
    53%
-      +transform(scale3d(0.91, 1, 1))
+      transform: scale3d(0.91, 1, 1)
    64%
-      +transform(scale3d(1, 1, 1))
+      transform: scale3d(1, 1, 1)
    87%
-      +transform(scale3d(0.96, 1, 1))
+      transform: scale3d(0.96, 1, 1)
    100%
-      +transform(scale3d(1))
+      transform: scale3d(1)
 
 .expand-bounce-right
    +animation('expandBounceX 1s linear forwards')
@@ -647,11 +646,11 @@
 +keyframes(expandY)
 
    0%
-      +transform(scale3d(1, 0, 1))
+      transform: scale3d(1, 0, 1)
    50%
-      +transform(scale3d(1, 0.5, 1))
+      transform: scale3d(1, 0.5, 1)
    100%
-      +transform(scale3d(1,1,1))
+      transform: scale3d(1,1,1)
 
 .expand-top
    +animation('expandY 1s linear forwards')
@@ -668,17 +667,17 @@
 +keyframes(expandBounceY)
 
    0%
-      +transform(scale3d(1, 0, 1))
+      transform: scale3d(1, 0, 1)
    30%
-      +transform(scale3d(1, 1, 1))
+      transform: scale3d(1, 1, 1)
    53%
-      +transform(scale3d(1, 0.91, 1))
+      transform: scale3d(1, 0.91, 1)
    64%
-      +transform(scale3d(1,1,1))
+      transform: scale3d(1,1,1)
    87%
-      +transform(scale3d(1, 0.96, 1))
+      transform: scale3d(1, 0.96, 1)
    100%
-      +transform(scale3d(1,1,1))
+      transform: scale3d(1,1,1)
 
 .expand-bounce-top
    +animation('expandBounceY 1s linear forwards')
@@ -695,23 +694,23 @@
 +keyframes(elastico)
 
    0%
-      +transform(scale3d(1, 1, 1))
+      transform: scale3d(1, 1, 1)
       opacity: 0
    20%
-      +transform(scale3d(1.4, 1, 1))
+      transform: scale3d(1.4, 1, 1)
    43%
-      +transform(scale3d(.81, 1, 1))
+      transform: scale3d(.81, 1, 1)
       opacity: 1
    57%
-      +transform(scale3d(1.2, 1, 1))
+      transform: scale3d(1.2, 1, 1)
    69%
-      +transform(scale3d(.89, 1, 1))
+      transform: scale3d(.89, 1, 1)
    77%
-      +transform(scale3d(1.1, 1, 1))
+      transform: scale3d(1.1, 1, 1)
    89%
-      +transform(scale3d(.91, 1, 1))
+      transform: scale3d(.91, 1, 1)
    100%
-      +transform(scale3d(1,1,1))
+      transform: scale3d(1,1,1)
 
 .elastico
    +animation('elastico 1s linear forwards')
@@ -722,21 +721,21 @@
 +keyframes(wobble)
 
    0%
-      +transform(scale3d(1,1,1))
+      transform: scale3d(1,1,1)
    20%
-      +transform(scale3d(1.6,1.4,1.6))
+      transform: scale3d(1.6,1.4,1.6)
    43%
-      +transform(scale3d(0.81,0.96,0.81))
+      transform: scale3d(0.81,0.96,0.81)
    57%
-      +transform(scale3d(1.4,1.2,1.4))
+      transform: scale3d(1.4,1.2,1.4)
    69%
-      +transform(scale3d(.89,0.97,.89))
+      transform: scale3d(.89,0.97,.89)
    77%
-      +transform(scale3d(1.2,1.1,1.2))
+      transform: scale3d(1.2,1.1,1.2)
    89%
-      +transform(scale3d(.91,0.98,.91))
+      transform: scale3d(.91,0.98,.91)
    100%
-      +transform(scale3d(1,1,1))
+      transform: scale3d(1,1,1)
 
 .wobble
    +animation('wobble 1s linear both')
