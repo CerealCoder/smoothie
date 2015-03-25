@@ -42,8 +42,9 @@
 
       heading.addEventListener('click', function(){
 
-         this.classList.toggle('rotate-fade-in-left');
-         this.style.webkitAnimationDuration = '1s'
+         this.classList.toggle('elastico');
+         this.style.webkitAnimationDuration = '.57s'
+         this.style.webkitAnimationTimingFunction = 'ease-out';
          this.style.webkitAnimationFillMode = 'forwards';
       }, false);
 
@@ -53,7 +54,7 @@
 
             var link = theLinks[i];
             link.style.color = 'mediumseagreen';
-            link.classList.toggle('bounce-in-scale');
+            link.classList.toggle('expand-right');
             link.style.webkitAnimationDuration = '.75s';
             link.style.webkitAnimationFillMode = 'both';
 
@@ -63,9 +64,9 @@
 
       firstLink.addEventListener('mouseenter', function(){
 
-         this.classList.toggle('vanish-out');
+         this.classList.toggle('elastico');
          this.style.color = 'firebrick';
-         this.style.webkitAnimationDuration = '.65s';
+         this.style.webkitAnimationDuration = '.45s';
          this.style.webkitAnimationFillMode = 'forwards';
 
       }, false);
@@ -81,7 +82,7 @@
             var topOfWindow = window.pageYOffset;
 
             if (imgPos < topOfWindow + 240) {
-               square.classList.add('wobble');
+               square.classList.add('elastico');
             }
 
          });
