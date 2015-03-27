@@ -101,11 +101,11 @@
       transform: scale3d(1,1,1)
 
 .fade-in
-   // +animation('fadeIn 1s linear forwards')
+   // +animation('fadeIn 1s linear both')
    +animation-name(fadeIn)
    +animation-duration(1s)
    +animation-timing-function(ease)
-   +animation-fill-mode(forwards)
+   +animation-fill-mode(both)
 
 // Fade In Down
 
@@ -123,7 +123,7 @@
       opacity: 1
 
 .fade-in-down
-   +animation('fadeInDown 1s linear forwards')
+   +animation('fadeInDown 1s linear both')
    visibility: visible !important
 
 // Fade In Left
@@ -142,7 +142,7 @@
       opacity: 1
 
 .fade-in-left
-   +animation('fadeInLeft 1s linear forwards')
+   +animation('fadeInLeft 1s linear both')
    visibility: visible !important
 
 
@@ -162,7 +162,7 @@
       opacity: 1
 
 .fade-in-right
-   +animation('fadeInRight 1s linear forwards')
+   +animation('fadeInRight 1s linear both')
    visibility: visible !important
 
 
@@ -183,7 +183,7 @@
       transform: translate3d(0)
 
 .fade-in-up
-   +animation('fadeInUp 1s linear forwards')
+   +animation('fadeInUp 1s linear both')
    visibility: visible !important
 
 
@@ -201,7 +201,7 @@
       transform: translate3d(-20px,0,0)
 
 .shake
-   +animation('shake 1s ease-out forwards')
+   +animation('shake 1s ease-out both')
    visibility: visible !important
 
 
@@ -218,7 +218,7 @@
       transform: scale3d(1.2,1.2,1.2)
 
 .pulse-scale
-   +animation('pulseScale 1s ease-out forwards')
+   +animation('pulseScale 1s ease-out both')
    visibility: visible !important
 
 
@@ -241,7 +241,7 @@
       transform: scale(1)
 
 .fade-in-scale-bounce
-   +animation('fadeInScaleBounce 1s ease-out forwards')
+   +animation('fadeInScaleBounce 1s ease-out both')
    visibility: visible !important
 
 // Flip in Y // ANIMATE.CSS
@@ -274,7 +274,7 @@
       transform: perspective(400deg)
 
 .flip-top
-   +animation('flipTop 1s ease-out forwards')
+   +animation('flipTop 1s ease-out both')
    visibility: visible !important
 
 // Spin Clockwise
@@ -376,7 +376,7 @@
       transform: translate3d(0)
 
 .bounce-in-left
-   +animation('bounceInLeft 1s ease-in-out forwards')
+   +animation('bounceInLeft 1s ease-in-out both')
    visibility: visible !important
 
 // Bounce In Right
@@ -402,7 +402,7 @@
       transform: translate3d(0)
 
 .bounce-in-right
-   +animation('bounceInRight 1s ease-in-out forwards')
+   +animation('bounceInRight 1s ease-in-out both')
    visibility: visible !important
 
 // Bounce In Left
@@ -426,7 +426,7 @@
       transform: scale3d(1,1,1)
 
 .bounce-in-scale
-   +animation('bounceInScale 1s ease-out forwards')
+   +animation('bounceInScale 1s ease-out both')
    visibility: visible !important
 
 // Fade Out
@@ -447,7 +447,7 @@
       transform: scale(0)
 
 .fade-out
-   +animation('fadeOut 1s linear forwards')
+   +animation('fadeOut 1s linear both')
    visibility: visible !important
 
 
@@ -467,7 +467,7 @@
       transform: translate3d(0, -100%, 0)
 
 .fade-out-up
-   +animation('fadeOutUp 1s linear forwards')
+   +animation('fadeOutUp 1s linear both')
    visibility: visible !important
 
 // Fade Out Left
@@ -486,7 +486,7 @@
       transform: translate3d(-100%, 0,0)
 
 .fade-out-left
-   +animation('fadeOutLeft 1s linear forwards')
+   +animation('fadeOutLeft 1s linear both')
    visibility: visible !important
 
 // Fade Out Right
@@ -505,7 +505,7 @@
       transform: translate3d(100%, 0, 0)
 
 .fade-out-right
-   +animation('fadeOutRight 1s linear forwards')
+   +animation('fadeOutRight 1s linear both')
    visibility: visible !important
 
 // Fade Out Down
@@ -524,7 +524,7 @@
       transform: translate3d(0, 100%, 0)
 
 .fade-out-down
-   +animation('fadeOutDown 1s linear forwards')
+   +animation('fadeOutDown 1s linear both')
    visibility: visible !important
 
 // Gravitate Y [Inspired by Justin Aguilar. http://www.justinaguilar.com/animations/index.html]
@@ -566,7 +566,7 @@
       filter: blur(0)
 
 .vanish-in
-   +animation('vanishIn 1s ease-out forwards')
+   +animation('vanishIn 1s ease-out both')
    visibility: visible !important
 
 // Ghost Material Button
@@ -587,7 +587,7 @@
       opacity: 0
 
 .vanish-out
-   +animation('vanishOut 1s ease-out forwards')
+   +animation('vanishOut 1s ease-out both')
    visibility: visible !important
 
 
@@ -605,12 +605,12 @@
       transform: scale3d(1,1,1)
 
 .expand-left
-   +animation('expandX 1s linear forwards')
+   +animation('expandX 1s linear both')
    +transform-origin(right center)
    visibility: visible !important
 
 .expand-right
-   +animation('expandX 1s linear forwards')
+   +animation('expandX 1s linear both')
    +transform-origin(left center)
    visibility: visible !important
 
@@ -632,12 +632,12 @@
       transform: scale3d(1)
 
 .expand-bounce-right
-   +animation('expandBounceX 1s linear forwards')
+   +animation('expandBounceX 1s linear both')
    +transform-origin(left center)
    visibility: visible !important
 
 .expand-bounce-left
-   +animation('expandBounceX 1s linear forwards')
+   +animation('expandBounceX 1s linear both')
    +transform-origin(right center)
    visibility: visible !important
 
@@ -653,12 +653,12 @@
       transform: scale3d(1,1,1)
 
 .expand-top
-   +animation('expandY 1s linear forwards')
+   +animation('expandY 1s linear both')
    +transform-origin(bottom center)
    visibility: visible !important
 
 .expand-bottom
-   +animation('expandY 1s linear forwards')
+   +animation('expandY 1s linear both')
    +transform-origin(top center)
    visibility: visible !important
 
@@ -680,12 +680,12 @@
       transform: scale3d(1,1,1)
 
 .expand-bounce-top
-   +animation('expandBounceY 1s linear forwards')
+   +animation('expandBounceY 1s linear both')
    +transform-origin(bottom center)
    visibility: visible !important
 
 .expand-bounce-bottom
-   +animation('expandBounceY 1s linear forwards')
+   +animation('expandBounceY 1s linear both')
    +transform-origin(top center)
    visibility: visible !important
 
@@ -713,7 +713,7 @@
       transform: scale3d(1,1,1)
 
 .elastico
-   +animation('elastico 1s linear forwards')
+   +animation('elastico 1s linear both')
    visibility: visible !important
 
 // WOBBLE
